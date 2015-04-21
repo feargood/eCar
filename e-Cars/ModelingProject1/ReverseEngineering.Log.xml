@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Codegenerierungs-/Texttransformationsprotokoll">
+  <MessageClass Name="Message" Label="Meldung" Option="Informationsmeldungen anzeigen" />
+  <MessageClass Name="Warning" Label="Warnung" Option="Warnungen anzeigen" />
+  <MessageClass Name="Error" Label="Fehler" Option="Fehler anzeigen" />
+  <MessageClass Name="Property" Label="Eigenschaft" Option="Metadaten anzeigen" />
+  <MessageClass Name="Diagnostic" Label="Meldung" Option="Diagnosemeldungen anzeigen" />
+  <Message Timestamp="2015-04-21T15:10:33" Importance="High" Text="Reverse Engineering gestartet." />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars' -  (Package)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::Datenbank' -  (Package)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::Datenbank::Tankstelle' -  (Class) (Reverse Engineering teilweise durchgeführt - Definition nicht aktualisiert) " />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI' -  (Package)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen' -  (Package)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Medium" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo' -  (Class)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo::ID' -  (Property)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo::Standort' -  (Property)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo::tankstelle' -  (Property)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo::TankstelleInfo' -  (Operation)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo::TankstelleInfo::t' -  (Parameter)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo::Wartungsdatum' -  (Property)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering des Elements in das UML-Modell: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="Diagnostic" Text="Reverse Engineering der Beziehung in das UML-Modell: ModelingProject1::e_Cars::UI::Tankstellen::TankstelleInfo nach ModelingProject1::e_Cars::Datenbank::Tankstelle (Association)" />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="High" Text="Vollständiges Reverse Engineering für (1) Type(n)." />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="High" Text="Reverse Engineering für (1) Type(n) teilweise durchgeführt. Diese Typen waren nicht in der ursprünglichen Auswahl enthalten, sodass kein Reverse Engineering für deren vollständige Definitionen durchgeführt wurde. Stattdessen wurde bei diesem oberflächlichen Vorgang lediglich sichergestellt, dass diese Typen im UML-Modell vorhanden sind, da diese erforderlich sind, um andere Elemente vollständig zu beschreiben." />
+  <Message Timestamp="2015-04-21T15:10:34" Importance="High" Text="Der Reverse Engineering-Vorgang wurde mit (0) Fehler(n) und (0) Warnung(en) abgeschlossen." />
+</Log>

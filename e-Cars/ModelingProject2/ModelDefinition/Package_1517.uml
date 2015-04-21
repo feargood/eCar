@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="de7d1578-2dce-49cc-95e5-49070bbb0542"
+  name="UI"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="284c39f6-f5e1-4e59-824e-e675857f6196"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3De_Cars.UI"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="29e9b78d-caa1-40c2-b9f1-e0334c090236"
+        LastKnownName="Cars"
+        LastKnownLocation="Package1_1517.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cc1d0982-7ee2-463a-affc-185fb336891c"
+        LastKnownName="Kunden"
+        LastKnownLocation="Package2_1517.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f54d2307-c8a0-4035-887f-b4778d7f7647"
+        LastKnownName="Tankstellen"
+        LastKnownLocation="Package3_1517.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b1cd404a-a3fe-43b3-8c7c-50b06748191f"
+        LastKnownName="Reservierung"
+        LastKnownLocation="Package4_1517.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

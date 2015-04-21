@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1)" Category="CodeSchema_Solution" Bounds="-3.5527136788005E-15,112,53.88,25.96" Label="e-Cars" />
+    <Node Id="(@4 @2 Type=CarDetail)" Category="CodeSchema_Class" Bounds="414.713333333333,56,89.3866666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="CarDetail" Icon="Microsoft.VisualStudio.Class.Public" Label="CarDetail" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Torsten/Dropbox/Studium/e-Cars/e-Cars/obj/Debug/UI/Cars/CarDetail.g.i.cs StartLineNumber=40 StartCharacterOffset=4 EndLineNumber=40 EndCharacterOffset=4)" />
+    <Node Id="(@4 @2 Type=CarInfo)" Category="CodeSchema_Class" Bounds="304.666666666667,56,79.48,26" CodeSchemaProperty_IsPublic="True" CommonLabel="CarInfo" Icon="Microsoft.VisualStudio.Class.Public" Label="CarInfo" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Torsten/Dropbox/Studium/e-Cars/e-Cars/UI/Cars/CarInfo.cs StartLineNumber=9 StartCharacterOffset=4 EndLineNumber=9 EndCharacterOffset=4)" />
+    <Node Id="(@4 @2 Type=CarNew)" Category="CodeSchema_Class" Bounds="191.088333333333,56,82.6366666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="CarNew" Icon="Microsoft.VisualStudio.Class.Public" Label="CarNew" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Torsten/Dropbox/Studium/e-Cars/e-Cars/obj/Debug/UI/Cars/CarNew.g.i.cs StartLineNumber=40 StartCharacterOffset=4 EndLineNumber=40 EndCharacterOffset=4)" />
+    <Node Id="(@4 @2 Type=CarOverview)" Category="CodeSchema_Class" Bounds="534.628333333333,56,107.556666666667,26" CodeSchemaProperty_IsPublic="True" CommonLabel="CarOverview" Icon="Microsoft.VisualStudio.Class.Public" Label="CarOverview" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Torsten/Dropbox/Studium/e-Cars/e-Cars/obj/Debug/UI/Cars/CarOverview.g.i.cs StartLineNumber=40 StartCharacterOffset=4 EndLineNumber=40 EndCharacterOffset=4)" />
+    <Node Id="(@4 @2 Type=IntToProzentConverter)" Category="CodeSchema_Class" Bounds="0,56,160.813333333333,26" CodeSchemaProperty_IsPublic="True" CommonLabel="IntToProzentConverter" Icon="Microsoft.VisualStudio.Class.Public" Label="IntToProzentConverter" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Torsten/Dropbox/Studium/e-Cars/e-Cars/UI/Cars/IntToProzentConverter.cs StartLineNumber=10 StartCharacterOffset=4 EndLineNumber=10 EndCharacterOffset=4)" />
+    <Node Id="@3" Category="CodeSchema_Namespace" Bounds="139.567803668721,-104.023475727467,114.5,26" Icon="Microsoft.VisualStudio.Namespace.Public" Label="e_Cars‎.UI‎.Cars" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="@3" Target="(@4 @2 Type=CarDetail)" Category="Contains" Bounds="218.150025595321,-78.0234756469727,212.239077997962,129.339965144416" />
+    <Link Source="@3" Target="(@4 @2 Type=CarInfo)" Category="Contains" Bounds="208.80764509571,-78.0234756469727,117.507454582472,127.407666981506" />
+    <Link Source="@3" Target="(@4 @2 Type=CarNew)" Category="Contains" Bounds="199.708980697057,-78.0234756469727,27.852674753974,125.238118769122" />
+    <Link Source="@3" Target="(@4 @2 Type=CarOverview)" Category="Contains" Bounds="228.629737982644,-78.0234756469727,319.633807149295,130.618914479541" />
+    <Link Source="@3" Target="(@4 @2 Type=IntToProzentConverter)" Category="Contains" Bounds="95.1581418855975,-78.0234756469727,92.2026474910019,126.745457971257" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Class" Label="Klasse" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Klassen" />
+    <Category Id="CodeSchema_Namespace" Label="Namespace" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="CodeSchema_Namespace" NavigationActionLabel="Namespaces" />
+    <Category Id="CodeSchema_Solution" Label="Projektmappe" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" NavigationActionLabel="Projektmappen" />
+    <Category Id="CodeSchema_Type" Label="Typ" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Typen" />
+    <Category Id="Contains" Label="Enthält" Description="Gibt an, ob die Quelle der Verknüpfung das Zielobjekt enthält" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Enthalten in" IsContainment="True" OutgoingActionLabel="Enthält" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Ist Öffentlich" Description="Flag zum Angeben, dass der Bereich den Status &quot;Öffentlich&quot; besitzt" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Icon" Label="Symbol" Description="Symbol" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="Bezeichnung" Description="Anzeigbare Bezeichnung eines Objekts, das Anmerkungen einblenden werden kann" DataType="System.String" />
+    <Property Id="Language" Label="Sprache" Description="Sprache" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Startzeilennummer" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="Type" Label="Typ" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(VsSolutionUri)/e-Cars.sln" />
+    <Alias n="2" Id="Namespace=e_Cars.UI.Cars" />
+    <Alias n="3" Id="(@2)" />
+    <Alias n="4" Uri="Assembly=$(e3988e4a-9b9f-468e-8e2b-ae241e303097.OutputPathUri)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="e3988e4a-9b9f-468e-8e2b-ae241e303097.OutputPathUri" Value="file:///C:/Users/Torsten/Dropbox/Studium/e-Cars/e-Cars/bin/Debug/e-Cars.exe" />
+    <Path Id="VsSolutionUri" Value="file:///C:/Users/Torsten/Dropbox/Studium/e-Cars" />
+  </Paths>
+</DirectedGraph>

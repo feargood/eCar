@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Projekt2ModelStoreContainer" CdmEntityContainer="Projekt2Entities">
+    <EntitySetMapping Name="Adresse">
+      <EntityTypeMapping TypeName="Projekt2Model.Adresse">
+        <MappingFragment StoreEntitySet="Adresse">
+          <ScalarProperty Name="Hausnummer" ColumnName="Hausnummer" />
+          <ScalarProperty Name="Strasse" ColumnName="Strasse" />
+          <ScalarProperty Name="Ort" ColumnName="Ort" />
+          <ScalarProperty Name="PLZ" ColumnName="PLZ" />
+          <ScalarProperty Name="Adress_ID" ColumnName="Adress_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bank">
+      <EntityTypeMapping TypeName="Projekt2Model.Bank">
+        <MappingFragment StoreEntitySet="Bank">
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="BIC" ColumnName="BIC" />
+          <ScalarProperty Name="Bank_ID" ColumnName="Bank_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Car">
+      <EntityTypeMapping TypeName="Projekt2Model.Car">
+        <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="ReservierungGesperrt" ColumnName="ReservierungGesperrt" />
+          <ScalarProperty Name="SpontaneNutzungGesperrt" ColumnName="SpontaneNutzungGesperrt" />
+          <ScalarProperty Name="Gesperrt" ColumnName="Gesperrt" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Seriennummer" ColumnName="Seriennummer" />
+          <ScalarProperty Name="Car_ID" ColumnName="Car_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fahrt">
+      <EntityTypeMapping TypeName="Projekt2Model.Fahrt">
+        <MappingFragment StoreEntitySet="Fahrt">
+          <ScalarProperty Name="Reservierung_ID" ColumnName="Reservierung_ID" />
+          <ScalarProperty Name="Kunde_ID" ColumnName="Kunde_ID" />
+          <ScalarProperty Name="Car_ID" ColumnName="Car_ID" />
+          <ScalarProperty Name="End_KM" ColumnName="End_KM" />
+          <ScalarProperty Name="Start_KM" ColumnName="Start_KM" />
+          <ScalarProperty Name="Endzeit" ColumnName="Endzeit" />
+          <ScalarProperty Name="Startzeit" ColumnName="Startzeit" />
+          <ScalarProperty Name="Abgabeort" ColumnName="Abgabeort" />
+          <ScalarProperty Name="Abholort" ColumnName="Abholort" />
+          <ScalarProperty Name="Fahrt_ID" ColumnName="Fahrt_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GlobaleEinstellungen">
+      <EntityTypeMapping TypeName="Projekt2Model.GlobaleEinstellungen">
+        <MappingFragment StoreEntitySet="GlobaleEinstellungen">
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Wert" ColumnName="Wert" />
+          <ScalarProperty Name="Schluessel" ColumnName="Schluessel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Karte">
+      <EntityTypeMapping TypeName="Projekt2Model.Karte">
+        <MappingFragment StoreEntitySet="Karte">
+          <ScalarProperty Name="Sperrvermerk" ColumnName="Sperrvermerk" />
+          <ScalarProperty Name="Sperrdatum" ColumnName="Sperrdatum" />
+          <ScalarProperty Name="Aktiv" ColumnName="Aktiv" />
+          <ScalarProperty Name="Kunde_ID" ColumnName="Kunde_ID" />
+          <ScalarProperty Name="Karten_ID" ColumnName="Karten_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kunde">
+      <EntityTypeMapping TypeName="Projekt2Model.Kunde">
+        <MappingFragment StoreEntitySet="Kunde">
+          <ScalarProperty Name="FKopie" ColumnName="FKopie" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Gesperrt" ColumnName="Gesperrt" />
+          <ScalarProperty Name="Bank_ID" ColumnName="Bank_ID" />
+          <ScalarProperty Name="RechnungAdr_ID" ColumnName="RechnungAdr_ID" />
+          <ScalarProperty Name="Adress_ID" ColumnName="Adress_ID" />
+          <ScalarProperty Name="Passwort" ColumnName="Passwort" />
+          <ScalarProperty Name="Vorname" ColumnName="Vorname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Kunde_ID" ColumnName="Kunde_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rechnung">
+      <EntityTypeMapping TypeName="Projekt2Model.Rechnung">
+        <MappingFragment StoreEntitySet="Rechnung">
+          <ScalarProperty Name="Datum" ColumnName="Datum" />
+          <ScalarProperty Name="Betrag" ColumnName="Betrag" />
+          <ScalarProperty Name="Kunden_ID" ColumnName="Kunden_ID" />
+          <ScalarProperty Name="Rechnung_ID" ColumnName="Rechnung_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservierung">
+      <EntityTypeMapping TypeName="Projekt2Model.Reservierung">
+        <MappingFragment StoreEntitySet="Reservierung">
+          <ScalarProperty Name="Zeitstempel" ColumnName="Zeitstempel" />
+          <ScalarProperty Name="Kunde_ID" ColumnName="Kunde_ID" />
+          <ScalarProperty Name="Car_ID" ColumnName="Car_ID" />
+          <ScalarProperty Name="Abgabeort" ColumnName="Abgabeort" />
+          <ScalarProperty Name="Abholort" ColumnName="Abholort" />
+          <ScalarProperty Name="Endzeit" ColumnName="Endzeit" />
+          <ScalarProperty Name="Startzeit" ColumnName="Startzeit" />
+          <ScalarProperty Name="Reservierung_ID" ColumnName="Reservierung_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="Projekt2Model.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Car" ColumnName="Car" />
+          <ScalarProperty Name="StatusZeit" ColumnName="StatusZeit" />
+          <ScalarProperty Name="Standort" ColumnName="Standort" />
+          <ScalarProperty Name="KM_Stand" ColumnName="KM_Stand" />
+          <ScalarProperty Name="Baterieladung" ColumnName="Baterieladung" />
+          <ScalarProperty Name="Wartungstermin" ColumnName="Wartungstermin" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tanksaeule">
+      <EntityTypeMapping TypeName="Projekt2Model.Tanksaeule">
+        <MappingFragment StoreEntitySet="Tanksaeule">
+          <ScalarProperty Name="Belegt" ColumnName="Belegt" />
+          <ScalarProperty Name="Tanksaeule_Nr" ColumnName="Tanksaeule_Nr" />
+          <ScalarProperty Name="Tankstelle_ID" ColumnName="Tankstelle_ID" />
+          <ScalarProperty Name="Tanksaeule_ID" ColumnName="Tanksaeule_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tankstelle">
+      <EntityTypeMapping TypeName="Projekt2Model.Tankstelle">
+        <MappingFragment StoreEntitySet="Tankstelle">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Stasse" ColumnName="Stasse" />
+          <ScalarProperty Name="Ort" ColumnName="Ort" />
+          <ScalarProperty Name="PLZ" ColumnName="PLZ" />
+          <ScalarProperty Name="laengengrad" ColumnName="laengengrad" />
+          <ScalarProperty Name="breitengrad" ColumnName="breitengrad" />
+          <ScalarProperty Name="Tankstelle_ID" ColumnName="Tankstelle_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="e_Cars.UI.Cars.CarNew"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             xmlns:loc="clr-namespace:e_Cars.UI.Cars"
+             Style="{StaticResource UserControlStyle}"
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <loc:IntToProzentConverter x:Key="converter" />
+    </UserControl.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0"  Orientation="Horizontal">
+            <Button x:Name="ButtonZurueck" Content="_Zurück" Click="ButtonZurueck_Click" Width="60"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+
+            <GroupBox Header="Stammdaten" Height="155" VerticalAlignment="Top">
+                <Grid Height="136" VerticalAlignment="Top">
+
+                    <Label x:Name="LabelSeriennummer" Margin="10,10,0,0" Content="Seriennummer: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+                    <TextBox x:Name="TextBoxSeriennummer" Text="{Binding Path=Seriennummer, UpdateSourceTrigger=PropertyChanged}" Margin="120,10,10,0"  VerticalAlignment="Top"/>
+                    <Label Margin="10,41,0,0" Content="Wartungstermin: "  VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+                    <DatePicker x:Name="DatepickerWartungstermin" SelectedDate="{Binding WartungsTermin, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="120,42,0,0" VerticalAlignment="Top" Width="140"/>
+                    <Label Margin="10,72,0,0" Content="Batterieladung: "  VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+                    <Label Margin="120,72,0,0" Content="{Binding Path=Batterieladung, Converter={StaticResource ResourceKey=converter} }"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Height="26"/>
+                    <Slider Value="{Binding Path=Batterieladung, UpdateSourceTrigger=PropertyChanged}" Minimum="0" Maximum="100" VerticalAlignment="Top" Margin="180,72,10,0" Height="26"/>
+
+                    <Label x:Name="LabelKMStand" Margin="10,103,0,0" Content="Kilometerstand: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+                    <TextBox x:Name="TextBoxKMStand" MaxLength="7" DataObject.Pasting="TextBoxPasting" PreviewTextInput="TextBoxKMStand_PreviewTextInput" Text="{Binding Path=KM_Stand, UpdateSourceTrigger=PropertyChanged}" Margin="120,107,10,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </GroupBox>
+
+            <Button x:Name="ButtonAnlegen" Click="ButtonAnlegen_Click" Content="anlegen" Margin="0,0,10,10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+        </Grid>
+    </Grid>
+</UserControl>

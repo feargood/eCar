@@ -1,0 +1,2846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="e505708c-1cbb-45b2-8209-70ec270865c0"
+  name="Cars"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="808ad953-355c-45e7-ab5d-d6e1cd307a53"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3De_Cars.UI.Cars"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7bab3cf2-b33e-4444-a12d-44afa9deb4ed"
+        name="CarOverview"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d412cc76-22f3-437e-94ed-afa629c557f8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c5fc822d-2c5f-4b79-b2b6-d2d576f632b1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="adc557b6-f395-471d-9a53-f143fb87c0d6">
+                <propertyInstance
+                  Id="058c7ae5-5165-4015-ac49-3c95a791df70"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c3a123d3-430a-4936-ae87-68dc467b1f35">
+                <propertyInstance
+                  Id="91d32955-f8db-4d1e-a7e8-ec2c7b97aef0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8f941de-edb4-4d3d-b3ef-b124c6d83b4c">
+                <propertyInstance
+                  Id="02331cbe-edf6-43e0-8a06-ab78408a184e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae57d8ba-4242-443c-b207-6c7f4fc38577">
+                <propertyInstance
+                  Id="05ab4fa5-7911-4e7d-a34a-7a2d4fa42fd5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22e81e2c-73d0-4117-ab7c-27693479dfd7">
+                <propertyInstance
+                  Id="fce6d828-8a54-4aac-a6fe-1b4ec3ac57da"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b1a6ef0d-1d93-43fe-b8b7-e6a5708b314b">
+            <interfaceMoniker
+              Id="deeaf114-05e0-4778-88e6-6cc3b679cd29"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package9_1039.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="dd1eaf48-8f79-43ea-b1a4-15bee4e67a65">
+            <interfaceMoniker
+              Id="e9ea6212-eaf1-4d67-bb42-0811b4009216"
+              LastKnownName="INotifyPropertyChanged"
+              LastKnownLocation="Package1_1044.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="54ce4fcd-6659-448f-8a43-31ea4a7aecd2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="01fd567c-4a1b-4ac6-8268-ecda2b27ead7"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package8_1039.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="4bd379f2-4c26-478d-9840-44b969e59a54"
+            isDerived="false"
+            sourceEndRoleName="CarOverview"
+            targetEndRoleName="listCarsInfo"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7baba5b2-d879-4f7b-827f-f9df3420d254"
+              LastKnownName="List&lt;CarInfo‎&gt;"
+              LastKnownLocation="Package2_1040.uml" />
+            <description>Eigenschaft listCarsInfo Verweistyp List&lt;CarInfo‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91d50f1f-48ba-4d15-bfa5-467bf9892bfc"
+                  name="CarOverview"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c043be77-4901-4c77-904a-b198e5392932"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cf7931a9-f21d-44d0-b32d-f30ca6e078f3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a99ba887-b50c-4463-9103-1f9831d6d2cc"
+                  name="listCarsInfo"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e4dbe902-b6d1-4ecc-b860-9ba29fcd8d7e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e26338ec-21e3-4851-a92f-9956c4f1f2d6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9c44a834-e42c-40d5-b855-e84e2a90f737"
+            name="listCarsInfo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="badf96dd-8139-4080-9745-d40b367c2b38"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3DlistCarsInfo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="10cfc58a-de7c-4bb9-a5ff-974403db0149"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09c675f1-f516-4dc8-83d8-a01bed23c3ae">
+                    <propertyInstance
+                      Id="fb8cd321-eae7-494f-820b-cf01e128ecb0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d6c4748-5327-4790-bda6-dcc82c57f6d2">
+                    <propertyInstance
+                      Id="ee7b1d3c-728d-49c5-af99-1ab813480956"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db7e7334-5451-4c66-b737-adc0ba5e3193">
+                    <propertyInstance
+                      Id="983d0b8a-a2c1-4899-84a4-49c91da35c5d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="581403a6-59f1-4260-8029-c5b5945e989d">
+                    <propertyInstance
+                      Id="17d04481-f8e1-4222-86fb-ec2d6fe110e3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="847f2651-bd88-4787-b03f-616f82d307d2">
+                    <propertyInstance
+                      Id="773f3ff3-4996-4613-99db-fa98853c4dd4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7514111-2d71-4aa9-9698-88ed87dcaa9e">
+                    <propertyInstance
+                      Id="168cdd86-7488-4e83-b7c2-8174c4769e18"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82d2807b-d28a-456f-b048-5b137129ed45">
+                    <propertyInstance
+                      Id="49419939-8aed-487c-8cf7-4cce12210d10"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7baba5b2-d879-4f7b-827f-f9df3420d254"
+                LastKnownName="List&lt;CarInfo‎&gt;"
+                LastKnownLocation="Package2_1040.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="848d6ae6-bf1a-403e-a74f-c5f0cafc91b4"
+            name="mw"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="03171f27-a1b6-4c24-a7d4-5fa25c3133a5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3Dmw"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81319701-48e9-407c-99fe-25c9f170cab2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af6544db-6331-4288-bd17-e6c67e5fd559">
+                    <propertyInstance
+                      Id="b914814a-0fef-4090-b678-c486ec03b3dd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e154fb2-5579-46f6-997d-ecc3d254829b">
+                    <propertyInstance
+                      Id="150c5b14-67ac-47e4-98ac-0512b1d3c7b0"
+                      name="Get"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f0a93a6-11e2-4ba1-b33a-b98865575e9e">
+                    <propertyInstance
+                      Id="c8944aea-4e6e-4eae-8483-4d2ecae027b3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99f5b5fc-16f7-4349-a34d-f580003aee1f">
+                    <propertyInstance
+                      Id="4c15b7bc-5205-410b-b59a-f0497579ee04"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5037eefc-30e6-4c9a-924c-b62b24d106c7">
+                    <propertyInstance
+                      Id="42b57ed4-76b1-4726-96b0-b9684f5fd645"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e76d349-40ed-48b4-a675-870b243c5a63">
+                    <propertyInstance
+                      Id="de70fd1a-ecb3-45ec-9806-6722ec77d47a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83b38a16-7880-4d26-bc59-908379f21e98">
+                    <propertyInstance
+                      Id="4206a2c8-7aa9-4cef-b713-6fd05302b07f"
+                      name="Set"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="78122c23-3741-49ab-b38e-eec7149ec42c"
+                LastKnownName="MainWindow"
+                LastKnownLocation="Package1_1039.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9814d4a7-23bc-4098-a259-66c46f46bc6f"
+            name="ButtonBack"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7cd05f48-b3ce-4807-8361-6c186ab9f01f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3DButtonBack"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="104401b2-4be5-4fc6-bdf8-242c58b9b7b2"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="044c7426-5e02-4fbe-b4c6-12a299c362b8">
+                    <propertyInstance
+                      Id="eec9734f-1d28-4d68-96f8-eade91bbb782"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8149eb8-5332-4135-9c69-c667cab82eb4">
+                    <propertyInstance
+                      Id="2083a6d3-b1a0-458d-8ac1-9a0a5283e20e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5d651c7-cf9b-4be1-b87b-94b1538ecbf0">
+                    <propertyInstance
+                      Id="93dc0ac2-a007-4fa9-add3-b5e89eec6c40"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e82a982d-7e28-482e-a261-0af08804b8a3">
+                    <propertyInstance
+                      Id="075c6685-8869-450d-9170-290679109131"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a6f9073-a27c-44f6-ad6f-4b7ec94b4b42">
+                    <propertyInstance
+                      Id="5057dc5a-93ff-45a6-af2e-a55bd91b69fc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e32b61f7-20e0-4a3e-8bca-0545fd212ec9"
+                LastKnownName="Button"
+                LastKnownLocation="Package8_1039.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d8821acb-98c0-4fe9-8d06-f239f25d9b93"
+            name="ButtonCreateNew"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c9b61a33-542d-4a48-aa99-ebf562478fb1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3DButtonCreateNew"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ad10df1f-b52b-4181-afe1-4c9ef5c8cb73"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9afcfee1-9afd-4a7d-9042-264398bc3bdd">
+                    <propertyInstance
+                      Id="a4f2c8ff-10a1-45b2-b2da-49cf9fe224ef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60a80e3a-3e0f-4817-9ddd-05dca406fc6f">
+                    <propertyInstance
+                      Id="41895768-3676-428f-8b1c-d3e9f9bd6663"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c663a641-f23d-4ceb-9977-fd20917193f0">
+                    <propertyInstance
+                      Id="eef89c58-b6f9-41d8-81e9-9b2cd83f5296"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59c2eb2e-7796-44fd-ac4c-02d6aeccb0e4">
+                    <propertyInstance
+                      Id="0bb9b1a4-d1ea-46ee-831e-236f7e502b6d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2b330e1-e61d-4adb-a970-3d6279bb8f2c">
+                    <propertyInstance
+                      Id="61754300-5f40-446a-bc9b-921fddb4fb6f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e32b61f7-20e0-4a3e-8bca-0545fd212ec9"
+                LastKnownName="Button"
+                LastKnownLocation="Package8_1039.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="308f35b9-b3e3-4668-abe4-757fca7ebdae"
+            name="PropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="bb1b4c7a-8bc1-4dc6-b9ac-57c19bb0421a"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3DPropertyChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="22ee761c-2f38-46c5-95e9-3eb04ea05348"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb3faf69-405a-42d4-a95f-ddddd9c49d72">
+                    <propertyInstance
+                      Id="30421251-3664-4515-91bd-db9dd61fa4ca"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08b66ce5-df5a-404b-9e2d-fc3769285512">
+                    <propertyInstance
+                      Id="b16c7d5b-6a87-476e-a350-19e5bd306aaf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="deadb0b3-0437-48ab-aa16-4eae833e98f3">
+                    <propertyInstance
+                      Id="d19e598c-2865-43a8-95ab-6160202f5923"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="febbaa96-fa4e-4cba-b279-8cabbe938cce">
+                    <propertyInstance
+                      Id="9626ad7b-3d22-4feb-aef3-a918e36b2d8a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46b489eb-ba3d-4d52-a1bc-239eb2b05a65">
+                    <propertyInstance
+                      Id="5ad6ecb2-e5b7-410e-9247-9c2e873f3d22"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c571068c-98a3-4ef6-a7fa-979c8fab0e63"
+                LastKnownName="PropertyChangedEventHandler"
+                LastKnownLocation="Package1_1044.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a51e2427-f239-4208-a67d-5531697a3617"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c41bd301-9ab0-4890-b9fc-4baaf8e938f1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a7ed2fb1-9252-4f78-97c5-857224d7412c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9638b240-0aed-45b9-b5f5-edce8a56b7ae">
+                    <propertyInstance
+                      Id="6884a17b-ed58-4e61-80b5-833372e1c481"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb2c7c88-3d6a-4d5a-a81c-786ffd904be1">
+                    <propertyInstance
+                      Id="96e207df-0fe0-4d59-bd0e-35eca43c748f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe0e2500-8403-48a5-9fae-6d8a305cdd9f">
+                    <propertyInstance
+                      Id="a2bc8625-726d-49d2-803e-44e9f96dd04a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="927c0d86-366e-4dff-9f3a-1ba60e620548">
+                    <propertyInstance
+                      Id="a26987f2-3f45-4c13-8e28-f019b3acbf04"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f84d8f75-d401-4023-a8bf-77e6cf244178">
+                    <propertyInstance
+                      Id="fc1be97a-6463-446f-b361-7068a71c5d78"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1587ecf1-c5e6-437c-9a30-3e01c4bf3035"
+            name="listcarsinfo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4c7c7923-d8f1-46ed-b866-075da9d3842f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3Dlistcarsinfo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5e949db3-fe99-41d7-a088-1a909f028c58"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="810ea4e7-1c59-4825-b202-16a216be96a2">
+                    <propertyInstance
+                      Id="e654db62-bd06-49d6-84e3-1e0a3a40a523"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01c5d374-af2b-4941-b016-6f10bfd0ac47">
+                    <propertyInstance
+                      Id="53777832-89bd-4165-9760-876dbc637724"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bde6df52-37d4-4708-af49-22fa1523f922">
+                    <propertyInstance
+                      Id="8648b6c1-8e2d-4f13-a96c-721c9149423b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53f53a20-d840-43f8-b051-d5ea5fb0b6d9">
+                    <propertyInstance
+                      Id="0a47fe53-58de-4da8-b0b2-c17b5142e473"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a5615cb-6c4f-4a4b-aed6-489755532f5b">
+                    <propertyInstance
+                      Id="686e443e-a2e0-40c9-a185-d7c55e1b52f1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7baba5b2-d879-4f7b-827f-f9df3420d254"
+                LastKnownName="List&lt;CarInfo‎&gt;"
+                LastKnownLocation="Package2_1040.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="52225e2e-5c32-4383-8758-6259bce86a04"
+            name="myListView"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="84c087fd-55db-4491-aea0-2d82f9db18ab"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3DmyListView"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a44d8b2-87fb-4be0-b1f8-61184ac65562"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f17a887-a9bf-426e-92b4-3360233021be">
+                    <propertyInstance
+                      Id="82daafae-8fd5-44cc-aa30-4bba4c3f7ee9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="929d0567-a986-4d29-9d6c-f9f21d021502">
+                    <propertyInstance
+                      Id="6725564c-c32c-4c48-ae68-5c41cbb6ab84"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="027eaf17-212c-48ed-9848-21936fa834c5">
+                    <propertyInstance
+                      Id="0dc8d8d2-71ac-4d0e-9b00-14a0200d7ea7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58abc416-e14d-4eda-b22b-6ce4cf96abca">
+                    <propertyInstance
+                      Id="40486174-f4cc-4822-b7d2-1c6fbe4646d8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e9b3a47-792f-4f05-8d7f-d01b1d216b8f">
+                    <propertyInstance
+                      Id="f7dc726b-fea5-4822-ae35-3a877df4b7b3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c448fb84-35fe-491f-9cf2-cbbbe518736e"
+                LastKnownName="ListView"
+                LastKnownLocation="Package8_1039.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c69727e9-7931-41dd-8048-a875a4b4fa79"
+            name="CarOverview"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6eb580da-ba5a-4e1d-ae9f-ba32fc4fbbd4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="055ba838-99e9-48d9-95ca-b35cbc0ec84b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f8e0d50-4f2c-4937-94cd-ba0419e9656e">
+                    <propertyInstance
+                      Id="c534c33c-3a2c-4ccb-896d-5293f107970e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e26ee25-8619-40c9-9579-36f971c05c0a">
+                    <propertyInstance
+                      Id="a116b3e0-4c90-4ac8-915c-5b369cb3529c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="896c7885-4574-4f81-917e-5949565d03d2">
+                    <propertyInstance
+                      Id="24961e0c-ff55-49f6-8faf-2acc2c9209a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efaa1806-4a95-441e-9021-c8026ff60df1">
+                    <propertyInstance
+                      Id="c57148df-d0e9-404e-aada-f653cd7478ae"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="351e756a-83dc-41fb-bed2-8db4c891d40a">
+                    <propertyInstance
+                      Id="6289032e-f0d3-4fba-9281-e4fb32443876"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c7d8dc7-0afb-4b7d-a8a2-d1fd31838f54">
+                    <propertyInstance
+                      Id="591b5432-6431-4a77-bcdc-7ee1954956e3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e999185b-776b-47e1-8a23-c14d57c76e83"
+                  name="mw"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="49bd3256-be95-47fb-8e60-1d11e1693c35"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow)]) ParameterIdentifier%3Dmw"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="78122c23-3741-49ab-b38e-eec7149ec42c"
+                      LastKnownName="MainWindow"
+                      LastKnownLocation="Package1_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c0c79bcf-ed71-4a06-910f-8681ac51d02f"
+            name="ButtonBack_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fd05f476-b150-4558-a285-8827720cba4d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DButtonBack_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19c3c49e-2433-4760-99ec-95e2b94fc10a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d0095cf-3977-46c9-b97b-0d004bf63d27">
+                    <propertyInstance
+                      Id="ba763cf9-1dd3-418f-b9ab-43bd5b9427c7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a48422b-822e-40e4-865c-0dfd3565031a">
+                    <propertyInstance
+                      Id="a487af6a-1da4-426e-90a8-6f882263975a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9607de37-8a71-4360-8ea1-8355e6dbc287">
+                    <propertyInstance
+                      Id="187850ad-7ef0-463e-a8b9-4d58e577fc56"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b227dc89-e2a6-48d4-874c-53e081f6b3d3">
+                    <propertyInstance
+                      Id="d6cb96ba-d0cd-4ce0-9c6f-152e5ef47569"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9a932c6-a8d0-4db9-9bc0-663a6c39e9bf">
+                    <propertyInstance
+                      Id="748ae62c-418b-43e1-9af6-2476fff2aa5f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0358f8a-f29b-4d77-8f5c-2240bc30e302">
+                    <propertyInstance
+                      Id="29171560-4e27-40ce-aa75-bab43a4d7436"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1637b7c2-258c-470e-8ecf-b6e58a92a881"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e06c6b76-bfd5-4830-b754-c88a6f34fc87"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DButtonBack_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1bc5bbb7-4a88-4f12-8a01-8e1e1631da1c"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4790dde3-bf60-4a93-a4f6-11129eb22e3b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DButtonBack_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bc4f49a0-8122-4870-8f84-ecf3db2c17e5"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2017311d-eba1-4940-a00f-6306dd8e42d3"
+            name="ButtonCreateNew_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="63e5c84d-b4fb-4c0f-b747-0ef733149eef"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DButtonCreateNew_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7f363cc1-6ea4-4bcf-85c2-ad62e57d1334"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6053ff46-60e3-4d48-a413-c7c757ae6178">
+                    <propertyInstance
+                      Id="d20ab28b-8d23-4bbf-b682-02f0f5dfdfd0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b5263f5-0fb1-42b7-b301-0f73439c3291">
+                    <propertyInstance
+                      Id="5c4e70ba-513b-4cd2-be5c-f216aabc6f7e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef5e128a-c777-4935-8551-9537f09c8eae">
+                    <propertyInstance
+                      Id="40a50534-ec65-4c86-85d3-327ccf40aa8e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48814d05-47e6-4cb6-a798-73d659643a8d">
+                    <propertyInstance
+                      Id="0ebfa12e-b051-4a53-bead-8402666296ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d42f5e71-2690-45c6-8431-2abf6fa43212">
+                    <propertyInstance
+                      Id="74aacc49-ad71-4d58-bf28-b2cc38843bb3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51f06523-fada-44b5-ac9c-b5ea7aa088ba">
+                    <propertyInstance
+                      Id="00dc15a9-73cd-430b-b648-600e8417012d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e74efcc5-9e18-4523-b62d-7dc83f868013"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c32336b8-e0f9-4873-bcd4-ba8fef4b529d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DButtonCreateNew_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79e02e86-26a6-4473-a2f0-ffa5e1c4bba4"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fff5b183-aee7-45bb-ae1a-1e05c6168f98"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DButtonCreateNew_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bc4f49a0-8122-4870-8f84-ecf3db2c17e5"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6ff6745a-9319-4f7f-b509-72eba2b48cd9"
+            name="NotifyPropertyChanged"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b457e04f-d7f6-4d79-9b77-d64a10099796"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DNotifyPropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e0734a63-6e0f-415b-9a98-950fd5d9a6ac"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1a52113-0671-4738-8149-4cc9683273c5">
+                    <propertyInstance
+                      Id="ee63ad55-e940-41ba-905a-af046e09ea37"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3afaddd6-8d8b-4f40-9f93-f18141c1f238">
+                    <propertyInstance
+                      Id="0a77d2a8-7684-4dba-965d-e3ef59de2571"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea2cd873-8395-4eda-bfe2-fd1552c8d383">
+                    <propertyInstance
+                      Id="362696f0-da1c-4324-a55f-883b18e6680b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23fae619-904c-4b23-a170-8bd65e932a2d">
+                    <propertyInstance
+                      Id="45705cf3-9c66-4b29-98b9-1f6365b3dc08"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0f213b5-217d-4e0d-83ba-931c8513f094">
+                    <propertyInstance
+                      Id="1280172f-da71-4f9a-89ef-33a4a987e7f8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b514b154-68fc-4595-85a4-9fb12df0db51">
+                    <propertyInstance
+                      Id="3c48ab62-4619-4050-bc22-3687d31ae183"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b11c7cf-c998-4929-afd9-b54f2bbd04e5"
+                  name="info"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="15465a21-5abd-4c50-9186-d7609805ab10"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DNotifyPropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dinfo"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6be54dcd-4c0f-43ee-8202-da491e91c697"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7963b5b3-65db-4e5e-87aa-516ab87099c5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fa3b8cbb-7d46-4a74-a803-822564c5ba79"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc0636b2-c4cb-4bca-8666-8d381b46f581">
+                    <propertyInstance
+                      Id="542c77ac-e633-4cce-8c3a-8a6bfa91a3f5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a98f497b-6854-4178-b3f1-6475c3a3cf8c">
+                    <propertyInstance
+                      Id="69821c4c-ab39-4848-b1bb-ea3b7f51aa90"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6611beb4-cb06-4e6b-b28d-ede78b8aceb9">
+                    <propertyInstance
+                      Id="c152a694-476d-425d-b6bb-f1ec94324a71"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f890b83-970a-4a2a-a176-a6dd48a20103">
+                    <propertyInstance
+                      Id="cd096662-cf9c-43dc-b34b-b3082c3949b0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b1e53af-437e-4b1b-8506-921ed0d0a957">
+                    <propertyInstance
+                      Id="00866acb-bbd4-45e2-bfb5-b2606b600c12"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f73c2e98-964a-4750-a431-2de6edc29f6d">
+                    <propertyInstance
+                      Id="7ce3a8a7-c34c-45ad-a0fd-2150a04487ee"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ea3b8063-c6c7-4d3f-be56-0b4d698ba64f"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b62aa4be-76e0-4589-a027-1656a6473de4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1ebcba55-e70b-4f59-aee6-122a3a951a6d"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="985e8ba5-eb1a-4c8c-852b-f92359b7c154"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2ef0d74a-8824-474a-9d16-ce4ee7726665"
+            name="UserControl_Loaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c619b94f-3b98-4d22-aa93-31838b301db1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DUserControl_Loaded OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c2758eee-c5d4-44e3-8ac2-134eecff7949"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6ae4c8b-daf2-48b0-89ba-0f7fb25d7b4a">
+                    <propertyInstance
+                      Id="00d35203-dbe3-404b-a4b4-cb58050ce163"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3109743f-5ad4-4a73-9a33-a5a0e5aa41e5">
+                    <propertyInstance
+                      Id="365f83b4-274e-47ec-aec5-6fc7473ab9d5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb5ea80d-2a49-4755-9711-6ca7ce73c7ec">
+                    <propertyInstance
+                      Id="45416541-13b0-4898-8afd-6a1c6f405a1a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1410b39-0c0d-4b73-81d2-7c776207ce87">
+                    <propertyInstance
+                      Id="4a3f0ad0-666b-4c86-98a2-b780e1fd3805"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e91effbe-048d-4ec0-b4c5-3a50ae4f337c">
+                    <propertyInstance
+                      Id="345139d4-017c-4c00-b4b0-6f7da144c959"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfc5f9c2-207e-4aa3-8854-4b5c036a68a5">
+                    <propertyInstance
+                      Id="38ffa763-146f-4b31-9219-3f804c9d5e0e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7fc50742-ed5a-4f98-86b4-a8e3d603b446"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="74bc16cc-7875-4e62-b626-4ab134021f73"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DUserControl_Loaded OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8fc6e75-966d-4b5f-b3e6-902b93d0ea8d"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4475c0a5-1787-4893-a014-2754c6a42b04"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DUserControl_Loaded OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bc4f49a0-8122-4870-8f84-ecf3db2c17e5"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3c81ff8f-c4e2-4c9e-b220-36a4759fa66b"
+            name="getListOfCarsInfo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b65f166a-fb48-4dfb-84ac-6157b7607b7e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DgetListOfCarsInfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fdc00be6-482c-448e-968a-bf7bc6bee2ac"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf1670a2-22e0-4c88-be90-29775362541a">
+                    <propertyInstance
+                      Id="3184e6d2-2bc4-4c90-b5ae-bf0a43daf9b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cb0237d-1893-4925-87c0-7439bf166d33">
+                    <propertyInstance
+                      Id="064d4716-abdb-4c0c-90c6-f568cead14d3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="356c0f99-d5f8-4384-b180-114b1e0adbe7">
+                    <propertyInstance
+                      Id="94623a55-c587-4f89-aebf-2907cc69fb78"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4198c2da-fe4b-43b4-8d10-74b3003eb98f">
+                    <propertyInstance
+                      Id="94eeb827-e48e-4702-83ed-7c777d8b11ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbcc73f5-81e1-4cc5-8c81-03641222f3a5">
+                    <propertyInstance
+                      Id="4b0f1fc5-c915-4e75-9c86-ac0479af9cf7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd6feadf-a13b-4a0c-8240-cefec8105267">
+                    <propertyInstance
+                      Id="137da142-8a4b-48c0-b191-1a6a565e6a89"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0c468421-8947-4f30-a0d7-403f44faaa65"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7baba5b2-d879-4f7b-827f-f9df3420d254"
+                      LastKnownName="List&lt;CarInfo‎&gt;"
+                      LastKnownLocation="Package2_1040.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="01178194-77f5-4f0f-be63-d2ea419419a7"
+                  name="filter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5b4c36d2-7665-43f4-a60c-5c0f1ceb4df2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DgetListOfCarsInfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dfilter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="055257c8-3a0d-4ace-a429-833063c3b5b0"
+            name="myListView_MouseDoubleClick"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="66e6872d-4b37-4321-92dd-25b36b62646c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DmyListView_MouseDoubleClick OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DMouseButtonEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5421790f-3096-400e-8460-889051d78dc4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cff032e0-e1d7-4a5e-bc9a-7c8699135ef8">
+                    <propertyInstance
+                      Id="029a70f3-5c8b-43c1-8488-66ff70e272ec"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a39e8944-f233-4ad9-9579-d60479ae377b">
+                    <propertyInstance
+                      Id="1d79c1de-74c8-4c7f-a6ff-700f648523e0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36d9aebc-7a23-4247-a1d4-feb8d8907976">
+                    <propertyInstance
+                      Id="79e50801-4d8d-4f5d-ab71-7cdc68b92b75"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d69a2c19-6fc7-4b14-ac7b-a3a697b1aa88">
+                    <propertyInstance
+                      Id="419f78ec-5099-4680-bae1-c027834fe544"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="676e8461-c25c-4404-a498-51e935e05a50">
+                    <propertyInstance
+                      Id="2c89d2e3-781e-4e60-ae81-4982b3185a1b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cda3fb9-c647-4693-becb-3ecc5ce9bcb9">
+                    <propertyInstance
+                      Id="5b9beb57-b3f6-478f-b8ad-7ba0599ded3a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34861861-0152-4372-bc07-5ab5c91412a2"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4d151f17-dc4d-417e-ad8f-54644027f8be"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DmyListView_MouseDoubleClick OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DMouseButtonEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d0379e3-3b8a-4e28-bde6-71522e3e8df5"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a5a3ac02-eb31-45ce-a9f5-345aeda1125d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3D(Name%3DmyListView_MouseDoubleClick OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DMouseButtonEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7dc9b13b-6c2f-40a1-8be9-10f03486a96a"
+                      LastKnownName="MouseButtonEventArgs"
+                      LastKnownLocation="Package_1044.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="335c036d-1a9d-41e4-bd26-646df18a75b0"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e061e994-4e73-4518-8a44-f51749f9ff5b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="36bf352b-30df-434e-be2a-33044944883a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cdf614e-b4e2-44de-833b-136f44826d6f">
+                    <propertyInstance
+                      Id="12199404-1192-49bf-a9d1-e0aa2905a524"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecf86932-b11a-4ea9-9efb-b8a399fdf474">
+                    <propertyInstance
+                      Id="ddf1f4fc-185f-4a15-9fc5-16caddbd75ab"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bbff477-ff9e-447f-b1f8-eb36828eaca6">
+                    <propertyInstance
+                      Id="fcf4ab53-3f2b-43c2-a40e-971c953e24cd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3108eea5-2fd5-456b-a07e-c3570593e0eb">
+                    <propertyInstance
+                      Id="588c5996-2c34-4f44-a8ee-5fbcf9fc1e5e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dee7f677-64d3-49e0-b63e-267e9b556e80">
+                    <propertyInstance
+                      Id="d6d2d824-f80a-4acb-845a-ffd29145225d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="903bce11-335f-4937-b590-3265f7cfd234">
+                    <propertyInstance
+                      Id="621b3c3a-7edc-49e6-8d68-bec73186f2a4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="55d962e6-c3d7-4f00-94ab-e062fa941793"
+            name="loadData"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7bbb847e-710d-4fc2-b66c-d3a82dbe320a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarOverview Member%3DloadData"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b791db2-dbd7-4cb0-bca9-ffa93a2ddb92"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f89762c1-006e-4e40-88b1-21fc6ce91b92">
+                    <propertyInstance
+                      Id="31ae33a0-ce06-43fc-925d-31bc493c78f0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e61ed22b-ab95-4d6b-afe7-b9fe78285c37">
+                    <propertyInstance
+                      Id="ffed70c1-bdf9-40e6-a7fb-c85c620e76b7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74be3547-08f7-4b66-bafd-2c5f94a1e540">
+                    <propertyInstance
+                      Id="e49f4e5e-186f-40fb-bca4-89b37b94b933"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="304615ca-a72b-41d5-883a-700f2441d675">
+                    <propertyInstance
+                      Id="6dacb69b-f27b-4fc9-b9a9-6991221fabe1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3050172-e4ad-4ac8-8147-e6d80122fa27">
+                    <propertyInstance
+                      Id="28686e6d-99ef-4f6d-9ea1-0f4183d578ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99b37ca1-fe70-444d-91cb-fbd31ce95672">
+                    <propertyInstance
+                      Id="8ede3c84-e624-4739-add4-7453c6ac6b4d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ea7eb0db-fe09-460b-9995-4e5985f4ba42"
+        name="IntToProzentConverter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6104f479-5a56-4a49-8640-67dffdee4bfb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e76c0dac-f99b-4ca3-a541-14ffc01482d1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63784022-93a2-45aa-993c-e4de03e2e46e">
+                <propertyInstance
+                  Id="50bd239a-d918-471f-a9f4-26d0029e164a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b4407caa-4131-4b12-8809-0b7fd332c871">
+                <propertyInstance
+                  Id="45eeac59-26b7-4ea9-a8a7-cca9aff855d6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8d329572-6b73-423f-9785-23db562bb240">
+                <propertyInstance
+                  Id="4f1006c9-9986-4314-bd18-a69ad6822e10"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f7e5d08f-80fc-4671-b015-fde2f0ac4ee6">
+                <propertyInstance
+                  Id="7f416fe1-0a03-4561-a54c-1790562fd1ea"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8052faa-48fa-453a-853c-28bb5c4e559e">
+                <propertyInstance
+                  Id="ad66b3bf-5da1-4ab5-8d81-df021d871166"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="db219776-a314-42a8-8fe1-f3e3d2bdcbae">
+            <interfaceMoniker
+              Id="a6d8cb51-c242-4eba-a4b1-61c69b3cb005"
+              LastKnownName="IValueConverter"
+              LastKnownLocation="Package3_1044.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="03e323e2-4c14-4995-9b51-335dfd2f22b9"
+            name="Convert"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6e78b74f-d670-4156-8468-d89d6ec2d710"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvert OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2805b963-33b0-4523-997b-0f8ea2aab5d7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66d78663-0f6c-4909-b986-9e5dbe8c92d7">
+                    <propertyInstance
+                      Id="480bd790-4702-4b6b-9085-0fcf3f8393f7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="698d5e87-f655-4ce6-9e4d-e80ba01c1e3b">
+                    <propertyInstance
+                      Id="bc9ed933-7342-4d3f-b29d-2ca70e43a022"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0b955c8-4523-4942-8b77-8f88592f1fa7">
+                    <propertyInstance
+                      Id="a72c9052-b7f4-478b-a20d-886e149d2945"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1adc5c1e-c8d7-412e-b3d3-af1712388225">
+                    <propertyInstance
+                      Id="51a8fcb0-8eb8-41e3-8d05-8abd2231a5b8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="718e03da-2a47-46a6-85b6-a43bbe218ae2">
+                    <propertyInstance
+                      Id="fd2b5c28-91ff-42e5-b84e-2917f9daa923"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ecfb71a-6be6-4c11-b813-e2f5965c3f57">
+                    <propertyInstance
+                      Id="8f6652d3-c3d4-4a64-a411-48b25fd7f54a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c432f9b6-2c04-495a-93e0-7a2bc0b66cc9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="583fb74b-d519-4919-bd82-fe53292d27f8"
+                  name="value"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="daf4a903-bb59-47a6-85dc-7ade29bcd6b0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvert OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3Dvalue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b7dcb15-5b7e-4686-affe-bb0672aec1c2"
+                  name="targetType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3aad20ac-d79a-49ee-8a6b-e0282c19755b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvert OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3DtargetType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5e085803-17cb-4979-afb5-50b2f282f1fd"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21c687c4-d831-469e-9551-f7f45bdf5a16"
+                  name="parameter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c01f6817-1244-4c3f-9afd-3360c3831251"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvert OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3Dparameter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="519865d4-5713-45e5-b0eb-b157a76da422"
+                  name="culture"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c3ebe1d9-41f2-4576-836f-af14ecaac19d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvert OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3Dculture"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a9f28fff-e348-4e44-89ac-77689f682897"
+                      LastKnownName="CultureInfo"
+                      LastKnownLocation="Package2_1044.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a8013344-f384-4b79-8cc0-a1ac0a88e07d"
+            name="ConvertBack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="37b8a13a-9873-4d30-94cf-cfbc9c9aef64"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvertBack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e8432c6-dcca-41e5-bffb-e363c6642c60"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c90996f-94d7-4d94-b4f0-0ea000586227">
+                    <propertyInstance
+                      Id="b58ff0b7-6e7a-4701-ab24-bd6b557f7ca1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e00fc0f7-44e4-417e-b5a1-978aa3de3103">
+                    <propertyInstance
+                      Id="c37d7ca7-0f1c-4737-aaff-ce235bcc2fa4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6512d68e-c9c2-4327-ad8e-7393977459bf">
+                    <propertyInstance
+                      Id="36d9a6a2-cd6f-4004-9752-33f89ad48d06"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7df0af50-7cc8-41cf-8494-b27033f9a3e1">
+                    <propertyInstance
+                      Id="b8ad195e-af0e-4fa9-8d16-39b0c5097b55"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09222710-9a6c-44f6-97f9-1e33dcb09878">
+                    <propertyInstance
+                      Id="78a06064-7533-49eb-b498-49c4b515990c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d2e21de-d840-49a3-9d96-0c0e801d2d8f">
+                    <propertyInstance
+                      Id="931d9d2f-e6db-46e2-add3-2e97728c63bb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20e79b8c-1577-45b4-b07a-9c5cf3f2d8bd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a75fef4-1b42-4429-9e5b-700ed863b4b8"
+                  name="value"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="663566de-9cad-43f0-8a15-636562e94a1a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvertBack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3Dvalue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="545b8f03-8d9c-493b-b6a0-be8fb757dbb6"
+                  name="targetType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="24b49999-2a36-4dff-bbc2-93d46aa9bb54"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvertBack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3DtargetType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5e085803-17cb-4979-afb5-50b2f282f1fd"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4045f00e-321b-40db-ba63-7a1e6278c0ee"
+                  name="parameter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9badc90b-b7cf-4b6c-9f33-ba5a39f73824"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvertBack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3Dparameter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0071c341-9ea5-4101-a0d3-d0ebaa6fcd21"
+                  name="culture"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9c7168f2-474d-4247-9ce8-e9ce8903ac13"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D(Name%3DConvertBack OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Globalization Type%3DCultureInfo)]) ParameterIdentifier%3Dculture"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a9f28fff-e348-4e44-89ac-77689f682897"
+                      LastKnownName="CultureInfo"
+                      LastKnownLocation="Package2_1044.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4a1cf7ef-864f-49a9-bf49-a7592bd208cd"
+            name="IntToProzentConverter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ef2d541e-00a9-4c18-8867-2a8a0aafc907"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DIntToProzentConverter Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b2a13625-4e44-47bb-b472-27d3464dfcd3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e51bebb-4d89-46fe-a827-5b42b9b732f2">
+                    <propertyInstance
+                      Id="9d178690-e1e6-4cb2-b362-fab2dbfaac73"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea795117-126d-4616-b906-253d2c7bbc5b">
+                    <propertyInstance
+                      Id="cdf0cd25-e058-4b4d-a512-f7927624af13"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb07cddd-4795-4589-a897-8129d0a92df7">
+                    <propertyInstance
+                      Id="8a1fb4db-d8d1-4b19-adcb-28c2d083707f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b6dc0f0-01d7-4dcb-bcc8-5a901c265926">
+                    <propertyInstance
+                      Id="c080c1b9-8e2c-4297-bcdc-cb870e6edd4c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9938363a-2bb5-4437-8ac9-375cd25d731f">
+                    <propertyInstance
+                      Id="0d82bac6-09f1-4f8c-b64f-a22bc4789983"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7bce830-2408-476c-b51d-5748ebf70168">
+                    <propertyInstance
+                      Id="7c71fe12-ee71-426c-81ce-fb0b15111893"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2046d45d-5b4b-4eef-97c9-ac20bf822c40"
+        name="CarNew"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="96c3c3e7-7cea-40ed-b887-0fc9a4794781"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarNew"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="40e0a9d6-fff5-4552-b94d-569b97e31f6a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f02d75cd-316f-4f4e-b900-6559b6cc5e46">
+                <propertyInstance
+                  Id="90e40c5c-335d-4186-b07e-b595ee1ab078"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="71ff5e83-e98c-49c7-b94f-57b0addd8355">
+                <propertyInstance
+                  Id="433bc40e-5ae5-4e02-95a9-23ab46993ac4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4fc679f6-ca43-4c09-8031-6f145e6704e7">
+                <propertyInstance
+                  Id="569ca5b7-0baf-4f0a-b410-9c3cb63d01c9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="faeeaf2a-f087-436c-8721-71cba4feb109">
+                <propertyInstance
+                  Id="f06ff346-4a03-44f9-8df8-fe5e736ee787"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c138294-dd0e-402f-badb-cf437ce0409f">
+                <propertyInstance
+                  Id="ebe152f2-772c-4951-aa90-f9fee5c40985"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="da017f1c-e29b-4afe-b7ad-7397b79118ce"
+            isSubstitutable="false">
+            <classMoniker
+              Id="01fd567c-4a1b-4ac6-8268-ecda2b27ead7"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package8_1039.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="800c6b35-61e4-4545-9532-3180dfc52f65"
+            name="CarNew"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8da2b3a7-7084-4599-8267-e56bf2a0b1a8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarNew Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eb29881b-17f7-4640-a118-11039a987947"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddb71317-e52d-473c-941d-b1fc44c24dfd">
+                    <propertyInstance
+                      Id="4e5dcb4f-8ab0-4b45-88e7-eb6f6f41eb78"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f285a678-c09f-47f1-b178-232eab87a1f3">
+                    <propertyInstance
+                      Id="7ee9fa74-a408-435d-8254-1be4cf5ca322"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="840cdcd8-9d8b-4b80-a0b3-622aead7fde3">
+                    <propertyInstance
+                      Id="cf82160f-661b-431b-b98b-de3d9b163d99"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27e39019-e434-4a68-b2ba-1ef3c6a366cd">
+                    <propertyInstance
+                      Id="551b805c-79f8-4790-9b46-43ff3bdfbb85"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdab8e6c-5580-486a-8eba-4e87aa032736">
+                    <propertyInstance
+                      Id="c4f07d35-7db2-4f5b-afe3-899092ca8d07"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddd108c3-0854-4612-9462-c75b4e01ca82">
+                    <propertyInstance
+                      Id="50978a47-9913-44e7-a1df-a7caff782654"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4fd3b818-a7ae-4952-9ce2-7cb3a4646899"
+                  name="mw"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9f401a86-9edb-4b78-b8a1-85a099550677"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarNew Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow)]) ParameterIdentifier%3Dmw"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="78122c23-3741-49ab-b38e-eec7149ec42c"
+                      LastKnownName="MainWindow"
+                      LastKnownLocation="Package1_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2eaf8ab6-88a3-4571-94f4-03bb6e19a9e0"
+            name="ButtonAnlegen_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4191d79f-1023-44cc-8ee4-54d7b68c25ae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarNew Member%3D(Name%3DButtonAnlegen_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b53b507d-8ae8-4007-a51c-eb5d6e93f715"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4663a561-e9d0-4852-92b6-c7cdfdce4953">
+                    <propertyInstance
+                      Id="5bf8bc93-ca92-4eea-aaa9-8f3e6814a7e1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddbbe628-7a62-4d68-ae3a-0aa1db469df5">
+                    <propertyInstance
+                      Id="d658b94d-b9cc-4c36-ab50-a05e3253876e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f53b30d1-7c15-48fa-ad8b-1ef39efa9cab">
+                    <propertyInstance
+                      Id="138363c8-b583-4ec0-8463-71f8dcb0aa42"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f7496d4-1bd0-42aa-940d-ae577cb6ab8c">
+                    <propertyInstance
+                      Id="76141910-b7dc-42b9-afb5-108b8427f409"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eceed2ea-530b-4b2a-8cc8-774e8358ef8f">
+                    <propertyInstance
+                      Id="7ae0d0e1-cec4-42a7-b2de-c6518dfa9d90"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83131d35-1718-4578-b1ab-3609bf8f1631">
+                    <propertyInstance
+                      Id="57dfc215-0c3d-46fb-9caf-05f2358e279d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="219ec66a-460a-4879-80ab-ac8bb1e1ed68"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="858a5cd9-cbb8-43cf-a54c-c161491f1443"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarNew Member%3D(Name%3DButtonAnlegen_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a6654e8a-495f-474f-967e-46531853c584"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="510ac281-4cb0-4db2-8d87-7a8ce2480efa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarNew Member%3D(Name%3DButtonAnlegen_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bc4f49a0-8122-4870-8f84-ecf3db2c17e5"
+                      LastKnownName="RoutedEventArgs"
+                      LastKnownLocation="Package2_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="718bdbdc-28ff-4fb6-b3ca-0d92aa03e91a"
+            name="Operation1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2484dbc7-89f7-4597-acb4-d4ab9ed47e74"
+            name="Operation2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6dba383d-7e21-4cb2-84b0-d379bf4cb25f"
+            name="Operation3"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="59c8234e-0f87-47d7-8d69-4701dfd0ab5e"
+            name="Operation4"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="954130ea-7a7d-44c9-84cb-fa6198499361"
+            name="Operation5"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d4edc6b-781d-4295-94c2-1178ab305b7c"
+        name="CarDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="fb01607b-564c-4fa4-a83f-468a9ef9528c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8cf30060-6406-47d5-878d-a7ded4159ea2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="66834b3d-35b4-4a01-9281-94b9af11fb45">
+                <propertyInstance
+                  Id="d05ff30e-f4d8-41b2-b60a-dd9fe9e1c548"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0150646c-b8e2-4c10-a597-9f6fbb885340">
+                <propertyInstance
+                  Id="95fcf336-bdbd-41f1-9e03-803c24e9475f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61bc916c-090b-41c0-9105-029254da4ca9">
+                <propertyInstance
+                  Id="e14457a0-b80f-4ca2-a5cc-b1c6934c72cd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d97c8f45-984f-4a84-8e93-850876b057b6">
+                <propertyInstance
+                  Id="453b493d-e6df-4933-b977-da629fb1c136"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="624f6524-a66b-4f21-9050-dbc538639d80">
+                <propertyInstance
+                  Id="ab1d4b1d-e47f-4155-b68a-1b13fe143376"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="d06d6847-08a2-43d7-ba1e-1bd5746cb0b9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="01fd567c-4a1b-4ac6-8268-ecda2b27ead7"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package8_1039.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a923c532-ff6c-45a3-b880-cc03ee632583"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1bf37248-196a-4949-b7c3-e6c5b012c67b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="96e569c8-8ee8-4877-9fe8-c33be17bb1b9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e559761-01a3-4f6f-af94-bd24e65a287f">
+                    <propertyInstance
+                      Id="9f53ab5b-67a6-4767-bb3f-4e9f1812729c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f03c3dbc-9bba-4042-98ee-0ac4c9e3c97c">
+                    <propertyInstance
+                      Id="8ac5c355-f1df-42ec-88df-caca8df75381"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08057d11-c27d-4bf5-86a7-64e3f1052457">
+                    <propertyInstance
+                      Id="0f455771-a003-49af-b7b1-b184c848372a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c7ef29e-ce73-410e-8ce4-b3ea40afc349">
+                    <propertyInstance
+                      Id="c41116b2-a246-4ddc-8500-a2e689fc2ce0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9987eba-26df-4a51-b4f7-af43c63aeff2">
+                    <propertyInstance
+                      Id="ba024234-343e-4cfc-9641-9ed5a11d276c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1b83178-0624-410e-a9e7-f35f8857a36c">
+                    <propertyInstance
+                      Id="76accfd3-59b6-4ba8-837b-42369804ee4c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="b5e48bdf-26eb-448f-bb03-bd4680397a95"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a881d20b-082a-4400-8fed-4ab55037394f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0873f872-1ee3-4def-8f92-0d18d4796bf5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c47dbeb-7b7d-4802-a96e-a540acce9df3">
+                    <propertyInstance
+                      Id="e826a99b-d43e-4d4f-88b0-1d0ff9d76445"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ea15db6-f702-4ce1-ad91-a202ade9299c">
+                    <propertyInstance
+                      Id="b0b948da-a3c9-44de-8b18-d4412f8bbdd8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfc30322-469f-41c1-8128-8aae7d405402">
+                    <propertyInstance
+                      Id="bd8fd3bf-3b6e-412c-9a09-e3ce4722db56"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b40687de-a54a-435b-8bb5-90f15c6a271f">
+                    <propertyInstance
+                      Id="6d82aa84-5d81-45dc-a4d0-8b5aba710b89"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eda32e75-5a65-435a-b1ff-ea92aff18a7c">
+                    <propertyInstance
+                      Id="9587f97e-aa47-4319-a678-80625d234613"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c48d7425-758e-4791-9fae-eb86f52fe3ee">
+                    <propertyInstance
+                      Id="3d1ec8da-7212-4436-84bd-a071cfb0c5c0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fef44944-9469-4525-9d32-41d3afc6923c"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a2f4be59-5471-4fff-a6b6-b738ec3533b0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94b5e307-d844-41e2-8f94-90fe3e1807f9"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8a546787-9bf2-405a-a440-407d375db477"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b345aaa0-9461-4a59-8927-f3326d5cc475"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f618f4a7-b5a8-4076-8b75-2f5395fd88f6"
+            name="CarDetail"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="80158f07-66d9-402b-a9aa-176b7c62731e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarInfo)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0ffbc3c6-ebb3-495d-bd41-ec37576161ec"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b911e0a-0cfb-40b7-ae7f-071ff11e3487">
+                    <propertyInstance
+                      Id="a46c774c-ed54-4fbd-ba8a-b7078112634b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0441faca-881f-4a37-b694-0db5ebf23086">
+                    <propertyInstance
+                      Id="129164ce-bcf5-413c-99cc-f6e467dba4fe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="868f955c-46a9-4e2f-bbe9-29be2c9b5a48">
+                    <propertyInstance
+                      Id="dad41b3a-6e4c-4612-af55-18e43aa8e92d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18b33ceb-9c32-4a1e-80de-c6ad7cdbde00">
+                    <propertyInstance
+                      Id="37f14eb9-e792-4a61-8734-51c68e259c87"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7cee9bc-ee08-4fd1-ae99-9a22bcc70088">
+                    <propertyInstance
+                      Id="7e0d6569-2a50-4f28-b122-3ed4c8013507"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1602c256-8f28-4627-a213-26021ede3c6b">
+                    <propertyInstance
+                      Id="c2f6ee55-8a21-44cc-ac8c-db2851812bdd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b5dea1b-e589-4da2-9b0d-024a79d69214"
+                  name="mw"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="dfc63957-d885-452a-b000-ab2d69318872"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarInfo)]) ParameterIdentifier%3Dmw"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="78122c23-3741-49ab-b38e-eec7149ec42c"
+                      LastKnownName="MainWindow"
+                      LastKnownLocation="Package1_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b9df35c2-c838-4535-99cd-35a7384628f4"
+                  name="ci"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5325daf7-724f-4a24-af0b-cc113e003bac"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarDetail Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Cars Type%3DCarInfo)]) ParameterIdentifier%3Dci"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2da733c2-2727-4d8c-963b-11214ed85e71"
+                      LastKnownName="CarInfo"
+                      LastKnownLocation="Package1_1039.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8e532646-e76b-4e73-a8e0-9d3688d5cf7b"
+            name="Operation1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="eb144df9-e0b1-4563-97df-eaffbbb920c6"
+            name="Operation2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b5026b7c-0838-4411-acd6-32e71d797a9d"
+            name="Operation3"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2914b4eb-67b0-4fc0-935b-b252eeb14903"
+            name="Operation4"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="96f277f5-9fe0-4cd4-872c-bb97ae0342ff"
+            name="Operation5"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="138b9d67-dac5-4940-979e-7ef8f9ade73a"
+            name="Operation6"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="12636c7e-43e2-4b1d-a95b-9a4c2c314d3d"
+            name="Operation7"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e32af05e-5a00-45c7-baa9-cdac70ec3744"
+            name="Operation8"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="660892fe-a05d-49f2-9ea8-9db6da1457bb"
+            name="Operation9"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7caa6fc5-21e3-47de-84ab-dce8a0439340"
+            name="Operation10"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4e44d2ee-396c-4e4f-99c4-1737dda5ebb6"
+            name="Operation11"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

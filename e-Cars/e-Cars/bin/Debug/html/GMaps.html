@@ -1,0 +1,91 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map_canvas {
+            height: 100%;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://maps.google.com.mx/maps/api/js?v=3&sensor=true&language=de"></script>
+    <script src='http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js'></script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(48.458120, 7.943077),
+                zoom: 11,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("map_canvas"),
+                mapOptions);
+
+            setMarker();
+
+        }
+
+       
+
+        function setMarker() {
+
+            var myLatlng = new google.maps.LatLng(48.458120, 7.943077);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+            var myLatlng = new google.maps.LatLng(48.458120, 7.923077);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+            var myLatlng = new google.maps.LatLng(48.428120, 7.943077);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+            var myLatlng = new google.maps.LatLng(48.428120, 7.923077);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+            var myLatlng = new google.maps.LatLng(48.435120, 7.973077);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+        }
+
+    </script>
+</head>
+<body onload="initialize()">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+</body>
+</html>

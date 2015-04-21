@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="e_Cars.UI.Reservierung.ReservierungOverview"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Style="{StaticResource UserControlStyle}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0" Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="ButtonBack" Content="_Zurück" Click="ButtonBack_Click" Width="60"/>
+            <Button x:Name="ButtonCreateNew" Content="_Neu anlegen..." Click="ButtonCreateNew_Click" Width="100"/>
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <StackPanel>
+                <Grid>
+                    <Label Margin="10,0,0,0" HorizontalAlignment="Left"  >Filter:</Label>
+                    <TextBox TextAlignment="Left" VerticalAlignment="Top" Margin="70,4,10,0" Height="18"/>
+                </Grid>
+                <Grid>
+                    <Label Margin="10,0,0,0" Content="Datum: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="50"/>
+                    <DatePicker x:Name="DatepickerDatum" SelectedDate="{Binding WartungsTermin, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="70,0,0,0" VerticalAlignment="Top" Width="140"/>
+                </Grid>
+                <Grid>
+                    <CheckBox Margin="15,0,0,0" Content="Reservierung gesperrrt"></CheckBox>
+                </Grid>
+                
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Border Margin="5" BorderBrush="Black" BorderThickness="1">
+                <ListView x:Name="myListView" ItemsSource="{Binding listTankstelleInfo}" MouseDoubleClick="myListView_MouseDoubleClick">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Von" Width="Auto" DisplayMemberBinding="{Binding ID}"></GridViewColumn>
+                            <GridViewColumn Header="Bis" Width="Auto" DisplayMemberBinding="{Binding Standort}"></GridViewColumn>
+                            <GridViewColumn Header="Start" Width="Auto" DisplayMemberBinding="{Binding State}"></GridViewColumn>
+                            <GridViewColumn Header="Ziel" Width="Auto" DisplayMemberBinding="{Binding Wartungsdatum}"></GridViewColumn>
+                            <GridViewColumn Header="Auto" Width="Auto" DisplayMemberBinding="{Binding State}"></GridViewColumn>
+                            <GridViewColumn Header="Kunde" Width="Auto" DisplayMemberBinding="{Binding Wartungsdatum}"></GridViewColumn>
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

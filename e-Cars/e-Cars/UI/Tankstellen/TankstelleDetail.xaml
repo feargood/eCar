@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="e_Cars.UI.Tankstellen.TankstelleDetail"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Style="{StaticResource UserControlStyle}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Margin="0"  Orientation="Horizontal">
+            <Button x:Name="ButtonZurück" Content="_Zurück" Click="ButtonZurück_Click" Width="60"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+
+            <Label Margin="10,11,0,0" Content="Wartungstermin: "  VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <DatePicker x:Name="DatepickerWartungstermin" SelectedDate="{Binding WartungsTermin, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="120,11,0,0" VerticalAlignment="Top" Width="140"/>
+
+            <Label Content="Standort:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="Status:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+            <Label Content="ID:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+            
+            <TextBox x:Name="TBStandort" Height="23" Margin="87,43,10,0" TextWrapping="Wrap" Text="{Binding Path=Standort, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBState" Height="23" Margin="87,76,10,0" TextWrapping="Wrap" Text="{Binding Path=State, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBID" IsEnabled="False" Height="23" Margin="87,109,10,0" TextWrapping="Wrap" Text="{Binding Path=ID, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"/>
+
+            <CheckBox Margin="15,138,0,0" VerticalAlignment="Top" Content="Gesperrt"></CheckBox>
+            
+            <Button x:Name="ButtonSave" Click="ButtonSave_Click" Content="Änderungen speichern" Margin="0,0,10,10" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="135"/>
+        </Grid>
+    </Grid>
+</UserControl>

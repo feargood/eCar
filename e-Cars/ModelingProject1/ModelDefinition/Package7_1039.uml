@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e17b79e6-6e8e-41f9-a160-0444d71e4eb8"
+  name="Reservierung"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a72664fb-03fe-4cf4-818a-70b8d125004f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3De_Cars.UI.Reservierung"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b0c3d146-763a-41ec-a961-1391f20e7a42"
+        name="ReservierungOverview"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5a832f8f-9dfb-411b-864d-79120185b0c0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.UI.Reservierung Type%3DReservierungOverview"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a776f0da-7c82-4b79-90c5-ed9c43509172"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="758a2704-54f6-4fcb-8fd0-09597c5de4ac">
+                <propertyInstance
+                  Id="cd445ebc-471d-40a5-8847-db8c93ec1c3d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2f9562ac-ccfb-4031-a8e5-4c82fdcdb15d">
+                <propertyInstance
+                  Id="0eafefa3-04f4-4034-9757-4500c73c0df6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91079438-da19-46c0-8942-c4b07640dcf9">
+                <propertyInstance
+                  Id="55d2f26a-77cf-407a-a0de-18b3cd074301"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="986375c6-bb90-49a7-b88e-010a07e067cf">
+                <propertyInstance
+                  Id="bc3e1a70-5b7e-4521-a823-7a9fa27f3565"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0eb78a41-6ddb-4eb4-b29b-3ad031147ebe">
+                <propertyInstance
+                  Id="24faa606-f4b3-438c-9c27-5358ed2c05dc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="02e9297d-6ed8-4a66-aee8-e85e729a04c1">
+            <interfaceMoniker
+              Id="deeaf114-05e0-4778-88e6-6cc3b679cd29"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package9_1039.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="517a4aef-917b-4d2f-b146-49635232f20d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="01fd567c-4a1b-4ac6-8268-ecda2b27ead7"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package8_1039.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
