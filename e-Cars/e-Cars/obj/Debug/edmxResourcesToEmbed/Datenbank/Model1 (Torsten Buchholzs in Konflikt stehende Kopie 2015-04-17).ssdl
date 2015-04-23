@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Projekt2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adresse">
+    <Key>
+      <PropertyRef Name="Adress_ID" />
+    </Key>
+    <Property Name="Adress_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PLZ" Type="varchar" MaxLength="10" />
+    <Property Name="Ort" Type="varchar" MaxLength="200" />
+    <Property Name="Strasse" Type="varchar" MaxLength="200" />
+    <Property Name="Hausnummer" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Bank">
+    <Key>
+      <PropertyRef Name="Bank_ID" />
+    </Key>
+    <Property Name="Bank_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BIC" Type="varchar" MaxLength="200" />
+    <Property Name="IBAN" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Car_ID" />
+    </Key>
+    <Property Name="Car_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Seriennummer" Type="varchar" MaxLength="100" />
+    <Property Name="Status_ID" Type="int" />
+    <Property Name="Gesperrt" Type="bit" />
+  </EntityType>
+  <EntityType Name="Fahrt">
+    <Key>
+      <PropertyRef Name="Fahrt_ID" />
+    </Key>
+    <Property Name="Fahrt_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Abholort" Type="varchar(max)" />
+    <Property Name="Abgabeort" Type="varchar(max)" />
+    <Property Name="Startzeit" Type="datetime2" Precision="7" />
+    <Property Name="Endzeit" Type="datetime2" Precision="7" />
+    <Property Name="Start_KM" Type="float" />
+    <Property Name="End_KM" Type="float" />
+    <Property Name="Car_ID" Type="int" />
+    <Property Name="Kunde_ID" Type="int" />
+    <Property Name="Reservierung_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Kunde">
+    <Key>
+      <PropertyRef Name="Kunde_ID" />
+    </Key>
+    <Property Name="Kunde_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" />
+    <Property Name="Vorname" Type="varchar(max)" />
+    <Property Name="Adress_ID" Type="int" />
+    <Property Name="RechnungAdr_ID" Type="int" />
+    <Property Name="Bank_ID" Type="int" />
+    <Property Name="Gesperrt" Type="bit" />
+    <Property Name="RFID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Reservierung">
+    <Key>
+      <PropertyRef Name="Reservierung_ID" />
+    </Key>
+    <Property Name="Reservierung_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Startzeit" Type="datetime2" Precision="7" />
+    <Property Name="Endzeit" Type="datetime2" Precision="7" />
+    <Property Name="Abholort" Type="varchar(max)" />
+    <Property Name="Abgabeort" Type="varchar(max)" />
+    <Property Name="Car_ID" Type="int" />
+    <Property Name="Kunde_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Status_ID" />
+    </Key>
+    <Property Name="Status_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Wartungstermin" Type="datetime2" Precision="7" />
+    <Property Name="Baterieladung" Type="int" />
+    <Property Name="KM_Stand" Type="float" />
+    <Property Name="Standort" Type="varchar(max)" />
+    <Property Name="StatusZeit" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="Tankstelle">
+    <Key>
+      <PropertyRef Name="Tankstelle_ID" />
+    </Key>
+    <Property Name="Tankstelle_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Standort" Type="varchar(max)" />
+    <Property Name="State" Type="varchar(max)" />
+    <Property Name="Wartungsdatum" Type="datetime2" Precision="7" />
+  </EntityType>
+  <Association Name="FK_Car_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="0..1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Status_ID" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fahrt_Car">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="Fahrt" Type="Self.Fahrt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="Car_ID" />
+      </Principal>
+      <Dependent Role="Fahrt">
+        <PropertyRef Name="Car_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fahrt_Kunde">
+    <End Role="Kunde" Type="Self.Kunde" Multiplicity="0..1" />
+    <End Role="Fahrt" Type="Self.Fahrt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kunde">
+        <PropertyRef Name="Kunde_ID" />
+      </Principal>
+      <Dependent Role="Fahrt">
+        <PropertyRef Name="Kunde_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fahrt_Reservierung">
+    <End Role="Reservierung" Type="Self.Reservierung" Multiplicity="0..1" />
+    <End Role="Fahrt" Type="Self.Fahrt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reservierung">
+        <PropertyRef Name="Reservierung_ID" />
+      </Principal>
+      <Dependent Role="Fahrt">
+        <PropertyRef Name="Reservierung_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kunde_Adresse">
+    <End Role="Adresse" Type="Self.Adresse" Multiplicity="0..1" />
+    <End Role="Kunde" Type="Self.Kunde" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adresse">
+        <PropertyRef Name="Adress_ID" />
+      </Principal>
+      <Dependent Role="Kunde">
+        <PropertyRef Name="Adress_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kunde_Bank">
+    <End Role="Bank" Type="Self.Bank" Multiplicity="0..1" />
+    <End Role="Kunde" Type="Self.Kunde" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bank">
+        <PropertyRef Name="Bank_ID" />
+      </Principal>
+      <Dependent Role="Kunde">
+        <PropertyRef Name="Bank_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kunde_RechnungsAdr">
+    <End Role="Adresse" Type="Self.Adresse" Multiplicity="0..1" />
+    <End Role="Kunde" Type="Self.Kunde" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adresse">
+        <PropertyRef Name="Adress_ID" />
+      </Principal>
+      <Dependent Role="Kunde">
+        <PropertyRef Name="RechnungAdr_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservierung_Car">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="Reservierung" Type="Self.Reservierung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="Car_ID" />
+      </Principal>
+      <Dependent Role="Reservierung">
+        <PropertyRef Name="Car_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservierung_Kunde">
+    <End Role="Kunde" Type="Self.Kunde" Multiplicity="0..1" />
+    <End Role="Reservierung" Type="Self.Reservierung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kunde">
+        <PropertyRef Name="Kunde_ID" />
+      </Principal>
+      <Dependent Role="Reservierung">
+        <PropertyRef Name="Kunde_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Projekt2ModelStoreContainer">
+    <EntitySet Name="Adresse" EntityType="Self.Adresse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bank" EntityType="Self.Bank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Car" EntityType="Self.Car" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fahrt" EntityType="Self.Fahrt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kunde" EntityType="Self.Kunde" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reservierung" EntityType="Self.Reservierung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tankstelle" EntityType="Self.Tankstelle" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Car_Status" Association="Self.FK_Car_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fahrt_Car" Association="Self.FK_Fahrt_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="Fahrt" EntitySet="Fahrt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fahrt_Kunde" Association="Self.FK_Fahrt_Kunde">
+      <End Role="Kunde" EntitySet="Kunde" />
+      <End Role="Fahrt" EntitySet="Fahrt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fahrt_Reservierung" Association="Self.FK_Fahrt_Reservierung">
+      <End Role="Reservierung" EntitySet="Reservierung" />
+      <End Role="Fahrt" EntitySet="Fahrt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kunde_Adresse" Association="Self.FK_Kunde_Adresse">
+      <End Role="Adresse" EntitySet="Adresse" />
+      <End Role="Kunde" EntitySet="Kunde" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kunde_Bank" Association="Self.FK_Kunde_Bank">
+      <End Role="Bank" EntitySet="Bank" />
+      <End Role="Kunde" EntitySet="Kunde" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kunde_RechnungsAdr" Association="Self.FK_Kunde_RechnungsAdr">
+      <End Role="Adresse" EntitySet="Adresse" />
+      <End Role="Kunde" EntitySet="Kunde" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservierung_Car" Association="Self.FK_Reservierung_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="Reservierung" EntitySet="Reservierung" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservierung_Kunde" Association="Self.FK_Reservierung_Kunde">
+      <End Role="Kunde" EntitySet="Kunde" />
+      <End Role="Reservierung" EntitySet="Reservierung" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Projekt2ModelStoreContainer" CdmEntityContainer="Projekt2Entities">
+    <EntitySetMapping Name="Adresse">
+      <EntityTypeMapping TypeName="Projekt2Model.Adresse">
+        <MappingFragment StoreEntitySet="Adresse">
+          <ScalarProperty Name="Adress_ID" ColumnName="Adress_ID" />
+          <ScalarProperty Name="PLZ" ColumnName="PLZ" />
+          <ScalarProperty Name="Ort" ColumnName="Ort" />
+          <ScalarProperty Name="Strasse" ColumnName="Strasse" />
+          <ScalarProperty Name="Hausnummer" ColumnName="Hausnummer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Car">
+      <EntityTypeMapping TypeName="Projekt2Model.Car">
+        <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="Gesperrt" ColumnName="Gesperrt" />
+          <ScalarProperty Name="Car_ID" ColumnName="Car_ID" />
+          <ScalarProperty Name="Seriennummer" ColumnName="Seriennummer" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fahrt">
+      <EntityTypeMapping TypeName="Projekt2Model.Fahrt">
+        <MappingFragment StoreEntitySet="Fahrt">
+          <ScalarProperty Name="Fahrt_ID" ColumnName="Fahrt_ID" />
+          <ScalarProperty Name="Abholort" ColumnName="Abholort" />
+          <ScalarProperty Name="Abgabeort" ColumnName="Abgabeort" />
+          <ScalarProperty Name="Startzeit" ColumnName="Startzeit" />
+          <ScalarProperty Name="Endzeit" ColumnName="Endzeit" />
+          <ScalarProperty Name="Start_KM" ColumnName="Start_KM" />
+          <ScalarProperty Name="End_KM" ColumnName="End_KM" />
+          <ScalarProperty Name="Car_ID" ColumnName="Car_ID" />
+          <ScalarProperty Name="Kunde_ID" ColumnName="Kunde_ID" />
+          <ScalarProperty Name="Reservierung_ID" ColumnName="Reservierung_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kunde">
+      <EntityTypeMapping TypeName="Projekt2Model.Kunde">
+        <MappingFragment StoreEntitySet="Kunde">
+          <ScalarProperty Name="RFID" ColumnName="RFID" />
+          <ScalarProperty Name="Gesperrt" ColumnName="Gesperrt" />
+          <ScalarProperty Name="Bank_ID" ColumnName="Bank_ID" />
+          <ScalarProperty Name="Kunde_ID" ColumnName="Kunde_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Vorname" ColumnName="Vorname" />
+          <ScalarProperty Name="Adress_ID" ColumnName="Adress_ID" />
+          <ScalarProperty Name="RechnungAdr_ID" ColumnName="RechnungAdr_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservierung">
+      <EntityTypeMapping TypeName="Projekt2Model.Reservierung">
+        <MappingFragment StoreEntitySet="Reservierung">
+          <ScalarProperty Name="Reservierung_ID" ColumnName="Reservierung_ID" />
+          <ScalarProperty Name="Startzeit" ColumnName="Startzeit" />
+          <ScalarProperty Name="Endzeit" ColumnName="Endzeit" />
+          <ScalarProperty Name="Abholort" ColumnName="Abholort" />
+          <ScalarProperty Name="Abgabeort" ColumnName="Abgabeort" />
+          <ScalarProperty Name="Car_ID" ColumnName="Car_ID" />
+          <ScalarProperty Name="Kunde_ID" ColumnName="Kunde_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="Projekt2Model.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+          <ScalarProperty Name="Wartungstermin" ColumnName="Wartungstermin" />
+          <ScalarProperty Name="Baterieladung" ColumnName="Baterieladung" />
+          <ScalarProperty Name="KM_Stand" ColumnName="KM_Stand" />
+          <ScalarProperty Name="Standort" ColumnName="Standort" />
+          <ScalarProperty Name="StatusZeit" ColumnName="StatusZeit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tankstelle">
+      <EntityTypeMapping TypeName="Projekt2Model.Tankstelle">
+        <MappingFragment StoreEntitySet="Tankstelle">
+          <ScalarProperty Name="Tankstelle_ID" ColumnName="Tankstelle_ID" />
+          <ScalarProperty Name="Standort" ColumnName="Standort" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Wartungsdatum" ColumnName="Wartungsdatum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bank">
+      <EntityTypeMapping TypeName="Projekt2Model.Bank">
+        <MappingFragment StoreEntitySet="Bank">
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="BIC" ColumnName="BIC" />
+          <ScalarProperty Name="Bank_ID" ColumnName="Bank_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

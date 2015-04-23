@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="e_Cars.UI.Benutzer.UserOverview"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Style="{StaticResource UserControlStyle}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0" Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="ButtonZurück" Content="_Zurück" Click="ButtonZurück_Click" Width="60"/>
+            <Button x:Name="ButtonNeuAnlegen" Content="_Neu anlegen..." Click="ButtonNeuAnlegen_Click" Width="100"/>
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+            <Label Margin="10,8,0,7" HorizontalAlignment="Left"  >Filter:</Label>
+            <TextBox TextAlignment="Left" VerticalAlignment="Top" Margin="54,12,10,0" Height="18"/> 
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Border Margin="5" BorderBrush="Black" BorderThickness="1">
+                <ListBox x:Name="myListBox" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListBox.Resources>
+                        <Style x:Key="{x:Type ListBoxItem}" TargetType="ListBoxItem">
+                            <EventSetter Event="MouseDoubleClick" Handler="ListBox_MouseDoubleClick"/>
+                        </Style>
+                    </ListBox.Resources>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel x:Name="wrapPanel" FlowDirection="LeftToRight" Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

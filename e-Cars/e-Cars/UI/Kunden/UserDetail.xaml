@@ -54,7 +54,7 @@
                 </Grid>
 
                 <Grid>
-                    <CheckBox Content="Gesperrt" IsChecked="{Binding Path=Gesperrt, UpdateSourceTrigger=PropertyChanged}" Margin="10,10,0,0"></CheckBox>
+                    <CheckBox x:Name="CheckBoxGesperrt" Content="Gesperrt" IsChecked="{Binding Path=Gesperrt, UpdateSourceTrigger=PropertyChanged}" Margin="10,10,0,0"></CheckBox>
                 </Grid>
             </StackPanel>
 

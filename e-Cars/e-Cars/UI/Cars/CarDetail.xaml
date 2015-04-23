@@ -25,12 +25,16 @@
                 </StackPanel>
 
                 <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="19*"/>
+                        <ColumnDefinition Width="581*"/>
+                    </Grid.ColumnDefinitions>
 
-                    <Button Content="Fahrzeug orten..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130"/>
-                    <Button Content="Fahrtenliste..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="130"/>
-                    <Button Content="Reservierungen..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="130"/>
+                    <Button x:Name="ButtonFahrzeugOrten" Content="Fahrzeug orten..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2" Click="ButtonFahrzeugOrten_Click"/>
+                    <Button x:Name="ButtonFahrtenliste" Content="Fahrtenliste..." HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2" Click="ButtonFahrtenliste_Click"/>
+                    <Button x:Name="ButtonReservierung" Content="Reservierungen..." HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="130" Grid.ColumnSpan="2" Click="ButtonReservierung_Click"/>
 
-                    <GroupBox Header="Stammdaten" Margin="5,85,5,0" Height="152" VerticalAlignment="Top">
+                    <GroupBox Header="Stammdaten" Margin="5,85,5,0" Height="152" VerticalAlignment="Top" Grid.ColumnSpan="2">
                         <Grid>
                             <Label x:Name="LabelSeriennummer" Margin="10,10,0,0" Content="Seriennummer: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
                             <TextBox x:Name="TextBoxSeriennummer" Text="{Binding Path=Seriennummer, UpdateSourceTrigger=PropertyChanged}" Margin="120,10,10,0"  VerticalAlignment="Top"/>
@@ -46,11 +50,11 @@
                         </Grid>
                     </GroupBox>
 
-                    <CheckBox Margin="5,242,5,0" Content="Gesperrt" IsChecked="{Binding Path=Gesperrt, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"></CheckBox>
-                    <CheckBox Margin="5,262,5,0" Content="für Spontanenutzung gesperrt" IsChecked="{Binding Path=SpontaneNutzungGesperrt, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"></CheckBox>
-                    <CheckBox Margin="5,282,5,0" Content="für Reservierungen gesperrt" IsChecked="{Binding Path=ReservierungGesperrt, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"></CheckBox>
+                    <CheckBox x:Name="CheckBoxGesperrt" Margin="5,242,5,0" Content="Gesperrt" IsChecked="{Binding Path=Gesperrt, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Grid.ColumnSpan="2"></CheckBox>
+                    <CheckBox x:Name="CheckBoxSpontannutzung" Margin="5,262,5,0" Content="für Spontanenutzung gesperrt" IsChecked="{Binding Path=SpontaneNutzungGesperrt, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Grid.ColumnSpan="2"></CheckBox>
+                    <CheckBox x:Name="CheckBoxReservierung" Margin="5,282,5,0" Content="für Reservierungen gesperrt" IsChecked="{Binding Path=ReservierungGesperrt, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Grid.ColumnSpan="2"></CheckBox>
 
-                    <Button x:Name="ButtonAenderungenSpeichern" Content="Änderungen speichern" Margin="0,0,10,10" HorizontalAlignment="Right" Width="148" Click="ButtonAenderungenSpeichern_Click" Height="20" VerticalAlignment="Bottom" />
+                    <Button x:Name="ButtonAenderungenSpeichern" Content="Änderungen speichern" Margin="0,0,10,10" HorizontalAlignment="Right" Width="148" Click="ButtonAenderungenSpeichern_Click" Height="20" VerticalAlignment="Bottom" Grid.Column="1" />
                 </Grid>
             </Grid>
         </ScrollViewer>

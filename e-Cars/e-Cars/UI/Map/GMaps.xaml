@@ -22,7 +22,7 @@
             </StackPanel>
 
             <Grid Grid.Row="2">
-                <ComboBox Margin="10,10">
+                <ComboBox x:Name="ComboBoxTankst_Fahrz" Margin="10,10">
                     <ComboBoxItem Content="Tankstellen" IsSelected="True"></ComboBoxItem>
                     <ComboBoxItem Content="Fahrzeuge" ></ComboBoxItem>
                 </ComboBox>

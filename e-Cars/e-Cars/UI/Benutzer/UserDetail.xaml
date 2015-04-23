@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="e_Cars.UI.Benutzer.UserDetail"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Style="{StaticResource UserControlStyle}"
+             d:DesignHeight="360" d:DesignWidth="300">
+    <Grid>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vorname:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBName" Height="23" Margin="87,10,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBVorname" Height="23" Margin="87,43,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+        <GroupBox Header="Bankdaten" Margin="10,80,5,0" Height="165" VerticalAlignment="Top">
+            <Grid >
+                <Label Content="PLZ" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="Ort" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                <Label Content="Strasse" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+                <Label Content="Nr" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+
+                <TextBox x:Name="TBPLZ" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,12,10.2,0"/>
+                <TextBox x:Name="TBOrt" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,43,10.2,0"/>
+                <TextBox x:Name="TBStrasse" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,75,10,0"/>
+                <TextBox x:Name="TBNr" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,106,10,0"/>
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Bankdaten" Margin="10,250,0,0" Height="95" VerticalAlignment="Top">
+            <Grid >
+                <Label Content="BIC" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="IBAN" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TBBic" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,12,10.2,0"/>
+                <TextBox x:Name="TBIBAN" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,43,10.2,0"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</UserControl>

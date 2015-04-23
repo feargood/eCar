@@ -23,14 +23,14 @@
             <StackPanel>
                 <Grid>
                     <Label Margin="10,0,0,0" HorizontalAlignment="Left"  >Filter:</Label>
-                    <TextBox TextAlignment="Left" VerticalAlignment="Top" Margin="70,4,10,0" Height="18"/>
+                    <TextBox x:Name="TextBoxFilter" TextAlignment="Left" VerticalAlignment="Top" Margin="70,4,10,0" Height="18"/>
                 </Grid>
                 <Grid>
                     <Label Margin="10,0,0,0" Content="Datum: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="50"/>
                     <DatePicker x:Name="DatepickerDatum" SelectedDate="{Binding WartungsTermin, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="70,0,0,0" VerticalAlignment="Top" Width="140"/>
                 </Grid>
                 <Grid>
-                    <CheckBox Margin="15,0,0,0" Content="Reservierung gesperrrt"></CheckBox>
+                    <CheckBox x:Name="CheckBoxReservierung" Margin="15,0,0,0" Content="Reservierung gesperrrt"></CheckBox>
                 </Grid>
                 
             </StackPanel>

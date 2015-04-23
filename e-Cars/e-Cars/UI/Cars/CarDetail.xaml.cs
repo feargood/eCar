@@ -279,6 +279,21 @@ namespace e_Cars.UI.Cars
 
         }
 
+        private void ButtonFahrzeugOrten_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonFahrtenliste_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonReservierung_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
       
     }
 }
