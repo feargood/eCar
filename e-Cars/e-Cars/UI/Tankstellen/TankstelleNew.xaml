@@ -14,7 +14,7 @@
 
 
         <StackPanel Margin="0"  Orientation="Horizontal">
-            <Button x:Name="ButtonZurück" Content="_Zurück" Click="ButtonZurück_Click" Width="60"/>
+            <Button x:Name="ButtonZurueck" Content="_Zurück" Click="ButtonZurueck_Click" Width="60"/>
         </StackPanel>
 
         <Grid Grid.Row="1">

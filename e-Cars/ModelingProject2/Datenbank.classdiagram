@@ -2,53 +2,6 @@
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="37581579-3d84-4f08-aa4e-43a58fdb3a5f" name="UMLClassDiagram1" linkedPackageId="e51fb9ea-2d57-436a-be94-369f9548e978" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="35f44803-4ae6-491d-8a80-3df82db7587e" name="DatabaseQuery" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <referencesInternal>
-          <reference Id="33671a64-73e5-46f0-a106-1283349f5b74" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DDatabaseQuery" tag="ViewCode">
-            <elementDefinition Id="ffd0a88e-f8bf-470f-bcd7-bf070e76cdd7" />
-          </reference>
-        </referencesInternal>
-        <appliedStereotypesInternal>
-          <stereotypeInstance Id="698aaa9f-de74-456b-8b8f-6308b68e1f45" name="class" profile="CSharpProfile">
-            <elementDefinition Id="a104ba7d-4bcb-4c5e-b98f-beef851ec232" />
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="abaf8f29-aafc-4888-85ba-c0a7f43cd3f3">
-                <propertyInstance Id="502d78cd-e27f-4ad6-a0d8-26cb26723a56" name="ClrAttributes">
-                  <elementDefinition Id="9dd5ce10-594e-40a8-b25d-8e18818e5d3b" />
-                </propertyInstance>
-                <elementDefinition Id="832c9a78-4ae8-40e7-b144-67938b6398e3" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="33ded0f5-4b0a-4048-8d10-7c18eda67429">
-                <propertyInstance Id="d7e67346-1db3-4509-969a-488aeeb27e90" name="IsPartial" value="false">
-                  <elementDefinition Id="ad1d80b1-435e-46ad-9877-30d182a4b719" />
-                </propertyInstance>
-                <elementDefinition Id="a6c53686-9123-4ad0-8f5c-ceb717ce713f" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="f5610fce-491d-4378-91c0-2775ecc74ec8">
-                <propertyInstance Id="e89ecbd3-24b6-4f61-9b03-2eeaf5acff34" name="IsStatic" value="True">
-                  <elementDefinition Id="aa42e454-72ca-4e65-a836-742261407a67" />
-                </propertyInstance>
-                <elementDefinition Id="4780bf7a-6b8f-4a57-bb39-5ba5cf909983" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="4274d1e6-0acc-49e8-bece-40e297ed50d8">
-                <propertyInstance Id="54fb3e20-fbc3-488b-8fb0-45997fecdb25" name="IsUnsafe" value="false">
-                  <elementDefinition Id="89f7f960-55d3-4107-8142-2d315629e145" />
-                </propertyInstance>
-                <elementDefinition Id="8a8aa6ff-5f00-44dc-b8ed-f5fa8e83fc3d" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances Id="dd84809d-6cf0-4fb5-a55e-5ed80da60fb1">
-                <propertyInstance Id="8841f2b6-5ef2-490a-8f74-37bac6aa935f" name="PackageVisibility" value="internal">
-                  <elementDefinition Id="e2c9592d-426f-4b72-b834-2db83b632e84" />
-                </propertyInstance>
-                <elementDefinition Id="1b1a54b2-e737-4a50-ac8b-feeb70b25457" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-        <elementDefinition Id="ef05ebea-bd45-425f-9683-24ef172a0eff" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="5f83ad5d-7618-42cc-9838-74dc097bbd98" name="Fahrt" isAbstract="false" isLeaf="false" isActiveClass="false">
         <referencesInternal>
           <reference Id="bfae09d6-114a-41f6-8413-d101a15009d1" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DFahrt" tag="ViewCode">
@@ -2073,7 +2026,7 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="18dfee73-751c-4bdc-835f-e9f7d0224383" name="Kunde" isAbstract="false" isLeaf="false" isActiveClass="false">
         <referencesInternal>
-          <reference Id="665d1cfd-ac4a-4f02-a3bb-a3cbec2b5cee" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DKunde" tag="ViewCode">
+          <reference Id="665d1cfd-ac4a-4f02-a3bb-a3cbec2b5cee" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DKunde" tag="ViewCode">
             <elementDefinition Id="47c9aa27-186e-4647-b395-85f74545281a" />
           </reference>
         </referencesInternal>
@@ -6944,7 +6897,7 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="568a61e3-027a-4ade-aaae-f79013fa66ae" name="Tankstelle" isAbstract="false" isLeaf="false" isActiveClass="false">
         <referencesInternal>
-          <reference Id="dd53f92f-dab6-4b7d-838b-71c17e33a68a" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DTankstelle" tag="ViewCode">
+          <reference Id="dd53f92f-dab6-4b7d-838b-71c17e33a68a" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DTankstelle" tag="ViewCode">
             <elementDefinition Id="68191a3e-3c79-482b-a9fa-2875920f3810" />
           </reference>
         </referencesInternal>
@@ -7531,7 +7484,7 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="9836c332-3278-4561-ac35-9b399d92be11" name="Adresse" isAbstract="false" isLeaf="false" isActiveClass="false">
         <referencesInternal>
-          <reference Id="68f40000-b0f5-440a-8e89-dcc194105780" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DAdresse" tag="ViewCode">
+          <reference Id="68f40000-b0f5-440a-8e89-dcc194105780" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DAdresse" tag="ViewCode">
             <elementDefinition Id="2f94b484-deb5-4919-ac3d-8fdbd0d821e8" />
           </reference>
         </referencesInternal>
@@ -7998,7 +7951,7 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="381b7f3a-295b-4b43-85db-b33ad634d805" name="Bank" isAbstract="false" isLeaf="false" isActiveClass="false">
         <referencesInternal>
-          <reference Id="261bb5c0-c987-4591-86e4-8df751da1a49" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DBank" tag="ViewCode">
+          <reference Id="261bb5c0-c987-4591-86e4-8df751da1a49" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DBank" tag="ViewCode">
             <elementDefinition Id="898f1df9-3278-4765-9967-25802bba62c4" />
           </reference>
         </referencesInternal>

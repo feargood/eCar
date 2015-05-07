@@ -20,10 +20,10 @@ namespace e_Cars.Datenbank
         }
     
         public int Reservierung_ID { get; set; }
-        public Nullable<System.DateTime> Startzeit { get; set; }
+        public System.DateTime Startzeit { get; set; }
         public Nullable<System.DateTime> Endzeit { get; set; }
-        public string Abholort { get; set; }
-        public string Abgabeort { get; set; }
+        public int Abholort { get; set; }
+        public Nullable<int> Abgabeort { get; set; }
         public Nullable<int> Car_ID { get; set; }
         public Nullable<int> Kunde_ID { get; set; }
         public System.DateTime Zeitstempel { get; set; }
@@ -31,5 +31,6 @@ namespace e_Cars.Datenbank
         public virtual Car Car { get; set; }
         public virtual ICollection<Fahrt> Fahrt { get; set; }
         public virtual Kunde Kunde { get; set; }
+        public virtual Tankstelle Tankstelle { get; set; }
     }
 }

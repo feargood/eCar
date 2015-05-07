@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10" name="UMLClassDiagram1">
+  <logicalClassDesignerModelMoniker Id="865f026a-53be-43de-9814-cd86f342da2b" />
+  <nestedChildShapes>
+    <classShape Id="6db125f7-aae5-461e-8a42-56941ded6f9d" absoluteBounds="0.5, 5.25, 5.375, 4.5511167651414866" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="5764b23f-05d8-4843-a8c2-7fc60c15af13" LastKnownName="TankstelleDetail" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="512501ca-166c-4d80-8bdd-3e99f30bb36e" absoluteBounds="0.515, 5.76533563931783, 5.3450000000000006, 2.7636717880765596" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ffaaf754-40f1-4fc5-924c-5cd116ff0c38" absoluteBounds="0.515, 8.53900742739439, 5.3450000000000006, 1.162109337747097" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b3a5583-6c84-4984-a611-1276ca3087ae" absoluteBounds="6.375, 5.25, 2.125, 1.8284605995814007" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="06ef2cba-6982-4ab5-b285-3d3a93a7f202" LastKnownName="TankstelleInfo" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0b171d58-6db7-40f9-9479-8719e1434e9a" absoluteBounds="6.39, 5.76533563931783, 2.0949999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ddab519d-9f20-4e09-8ebe-e7cdb0772446" absoluteBounds="6.39, 6.6171324869990347, 2.0949999999999998, 0.36132811258236575" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09348aa0-0261-4c36-a6a0-09fe5a337e04" absoluteBounds="0.5, 0.75, 5.375, 4.2308042750755934" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="2cb9d2e9-7a5a-4f86-aeec-03aa671c18f1" LastKnownName="TankstelleNew" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="88001a9d-71fd-4111-8c93-b3e2804d8739" absoluteBounds="0.515, 1.2653356393178306, 5.3450000000000006, 2.4433592980106669" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b34f762e-3838-4256-8b96-a80799fab0a4" absoluteBounds="0.515, 3.7186949373284972, 5.3450000000000006, 1.1621093377470966" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9aa9b766-7874-404d-aa4e-716716a4de5f" absoluteBounds="6.375, 0.75, 4.375, 3.9104917850097021" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="06800ff5-6e38-445b-81bc-c3695923d2f2" LastKnownName="TankstelleOverview" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="67c7d530-4c21-4c0e-997a-393fa877ef06" absoluteBounds="6.39, 1.2653356393178306, 4.3450000000000006, 1.6425780728459358" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="23a9ee17-18eb-4897-8d05-cb43d231196e" absoluteBounds="6.39, 2.9179137121637662, 4.3450000000000006, 1.6425780728459358" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

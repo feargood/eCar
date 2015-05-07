@@ -27,8 +27,8 @@
                 </Grid>
 
                 <Grid>
-                    <GroupBox Header="Anschrift" Height="165" VerticalAlignment="Top">
-                        <Grid >
+                    <GroupBox Header="Anschrift" VerticalAlignment="Top">
+                        <Grid Margin="5">
                             <Label Content="PLZ" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                             <Label Content="Ort" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
                             <Label Content="Strasse" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>

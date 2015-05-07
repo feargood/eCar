@@ -28,6 +28,10 @@
     <Property Name="Gesperrt" Type="bit" />
     <Property Name="SpontaneNutzungGesperrt" Type="bit" />
     <Property Name="ReservierungGesperrt" Type="bit" />
+    <Property Name="Tankvorgaenge" Type="int" Nullable="false" />
+    <Property Name="Kilometerstand" Type="float" />
+    <Property Name="Batterieladung" Type="int" />
+    <Property Name="Wartungstermin" Type="datetime" />
   </EntityType>
   <EntityType Name="Fahrt">
     <Key>
@@ -91,10 +95,10 @@
       <PropertyRef Name="Reservierung_ID" />
     </Key>
     <Property Name="Reservierung_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Startzeit" Type="datetime2" Precision="7" />
+    <Property Name="Startzeit" Type="datetime2" Precision="7" Nullable="false" />
     <Property Name="Endzeit" Type="datetime2" Precision="7" />
-    <Property Name="Abholort" Type="varchar(max)" />
-    <Property Name="Abgabeort" Type="varchar(max)" />
+    <Property Name="Abholort" Type="int" Nullable="false" />
+    <Property Name="Abgabeort" Type="int" />
     <Property Name="Car_ID" Type="int" />
     <Property Name="Kunde_ID" Type="int" />
     <Property Name="Zeitstempel" Type="datetime2" Precision="7" Nullable="false" />
@@ -104,12 +108,7 @@
       <PropertyRef Name="Status_ID" />
     </Key>
     <Property Name="Status_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Wartungstermin" Type="datetime2" Precision="7" />
-    <Property Name="Baterieladung" Type="int" />
-    <Property Name="KM_Stand" Type="float" />
-    <Property Name="Standort" Type="varchar(max)" />
-    <Property Name="StatusZeit" Type="datetime2" Precision="7" />
-    <Property Name="Car" Type="int" />
+    <Property Name="Statusbezeichnung" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Tanksaeule">
     <Key>
@@ -118,7 +117,7 @@
     <Property Name="Tanksaeule_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Tankstelle_ID" Type="int" Nullable="false" />
     <Property Name="Tanksaeule_Nr" Type="int" Nullable="false" />
-    <Property Name="Belegt" Type="bit" Nullable="false" />
+    <Property Name="Car_ID" Type="int" />
   </EntityType>
   <EntityType Name="Tankstelle">
     <Key>
@@ -152,6 +151,18 @@
         <PropertyRef Name="Tanksaeule_ID" />
       </Principal>
       <Dependent Role="Fahrt">
+        <PropertyRef Name="Abholort" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Abholort_Tankstelle">
+    <End Role="Tankstelle" Type="Self.Tankstelle" Multiplicity="1" />
+    <End Role="Reservierung" Type="Self.Reservierung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tankstelle">
+        <PropertyRef Name="Tankstelle_ID" />
+      </Principal>
+      <Dependent Role="Reservierung">
         <PropertyRef Name="Abholort" />
       </Dependent>
     </ReferentialConstraint>
@@ -288,15 +299,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Status_Car">
+  <Association Name="FK_Tanksaeule_Car">
     <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
-    <End Role="Status" Type="Self.Status" Multiplicity="*" />
+    <End Role="Tanksaeule" Type="Self.Tanksaeule" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Car">
         <PropertyRef Name="Car_ID" />
       </Principal>
-      <Dependent Role="Status">
-        <PropertyRef Name="Car" />
+      <Dependent Role="Tanksaeule">
+        <PropertyRef Name="Car_ID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -332,6 +343,10 @@
     <AssociationSet Name="FK_Abholort_Tanksaeule" Association="Self.FK_Abholort_Tanksaeule">
       <End Role="Tanksaeule" EntitySet="Tanksaeule" />
       <End Role="Fahrt" EntitySet="Fahrt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Abholort_Tankstelle" Association="Self.FK_Abholort_Tankstelle">
+      <End Role="Tankstelle" EntitySet="Tankstelle" />
+      <End Role="Reservierung" EntitySet="Reservierung" />
     </AssociationSet>
     <AssociationSet Name="FK_Car_Status" Association="Self.FK_Car_Status">
       <End Role="Status" EntitySet="Status" />
@@ -377,9 +392,9 @@
       <End Role="Kunde" EntitySet="Kunde" />
       <End Role="Reservierung" EntitySet="Reservierung" />
     </AssociationSet>
-    <AssociationSet Name="FK_Status_Car" Association="Self.FK_Status_Car">
+    <AssociationSet Name="FK_Tanksaeule_Car" Association="Self.FK_Tanksaeule_Car">
       <End Role="Car" EntitySet="Car" />
-      <End Role="Status" EntitySet="Status" />
+      <End Role="Tanksaeule" EntitySet="Tanksaeule" />
     </AssociationSet>
     <AssociationSet Name="FK_Tanksaeule_Tankstelle" Association="Self.FK_Tanksaeule_Tankstelle">
       <End Role="Tankstelle" EntitySet="Tankstelle" />

@@ -145,8 +145,6 @@ namespace e_Cars
             MainGrid.Children.Add(map);
         }
 
-
-
         internal void setReservierungOverview(bool reset = false)
         {
             MainGrid.Children.Clear();

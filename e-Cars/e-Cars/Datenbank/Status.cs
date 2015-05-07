@@ -16,18 +16,12 @@ namespace e_Cars.Datenbank
     {
         public Status()
         {
-            this.Car1 = new HashSet<Car>();
+            this.Car = new HashSet<Car>();
         }
     
         public int Status_ID { get; set; }
-        public Nullable<System.DateTime> Wartungstermin { get; set; }
-        public Nullable<int> Baterieladung { get; set; }
-        public Nullable<double> KM_Stand { get; set; }
-        public string Standort { get; set; }
-        public Nullable<System.DateTime> StatusZeit { get; set; }
-        public Nullable<int> Car { get; set; }
+        public string Statusbezeichnung { get; set; }
     
-        public virtual ICollection<Car> Car1 { get; set; }
-        public virtual Car Car2 { get; set; }
+        public virtual ICollection<Car> Car { get; set; }
     }
 }

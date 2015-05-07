@@ -73,7 +73,7 @@ namespace e_Cars.UI.Tankstellen
             InitializeComponent();
         }
 
-        private void ButtonZurück_Click(object sender, RoutedEventArgs e)
+        private void ButtonZurueck_Click(object sender, RoutedEventArgs e)
         {
             mw.setTankstelleOverview();
         }

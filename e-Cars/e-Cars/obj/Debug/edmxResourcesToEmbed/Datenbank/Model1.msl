@@ -24,6 +24,10 @@
     <EntitySetMapping Name="Car">
       <EntityTypeMapping TypeName="Projekt2Model.Car">
         <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="Wartungstermin" ColumnName="Wartungstermin" />
+          <ScalarProperty Name="Batterieladung" ColumnName="Batterieladung" />
+          <ScalarProperty Name="Kilometerstand" ColumnName="Kilometerstand" />
+          <ScalarProperty Name="Tankvorgaenge" ColumnName="Tankvorgaenge" />
           <ScalarProperty Name="ReservierungGesperrt" ColumnName="ReservierungGesperrt" />
           <ScalarProperty Name="SpontaneNutzungGesperrt" ColumnName="SpontaneNutzungGesperrt" />
           <ScalarProperty Name="Gesperrt" ColumnName="Gesperrt" />
@@ -112,12 +116,7 @@
     <EntitySetMapping Name="Status">
       <EntityTypeMapping TypeName="Projekt2Model.Status">
         <MappingFragment StoreEntitySet="Status">
-          <ScalarProperty Name="Car" ColumnName="Car" />
-          <ScalarProperty Name="StatusZeit" ColumnName="StatusZeit" />
-          <ScalarProperty Name="Standort" ColumnName="Standort" />
-          <ScalarProperty Name="KM_Stand" ColumnName="KM_Stand" />
-          <ScalarProperty Name="Baterieladung" ColumnName="Baterieladung" />
-          <ScalarProperty Name="Wartungstermin" ColumnName="Wartungstermin" />
+          <ScalarProperty Name="Statusbezeichnung" ColumnName="Statusbezeichnung" />
           <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -125,7 +124,7 @@
     <EntitySetMapping Name="Tanksaeule">
       <EntityTypeMapping TypeName="Projekt2Model.Tanksaeule">
         <MappingFragment StoreEntitySet="Tanksaeule">
-          <ScalarProperty Name="Belegt" ColumnName="Belegt" />
+          <ScalarProperty Name="Car_ID" ColumnName="Car_ID" />
           <ScalarProperty Name="Tanksaeule_Nr" ColumnName="Tanksaeule_Nr" />
           <ScalarProperty Name="Tankstelle_ID" ColumnName="Tankstelle_ID" />
           <ScalarProperty Name="Tanksaeule_ID" ColumnName="Tanksaeule_ID" />

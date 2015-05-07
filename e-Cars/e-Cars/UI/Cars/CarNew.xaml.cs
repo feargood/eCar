@@ -50,17 +50,27 @@ namespace e_Cars.UI.Cars
             }
         }
 
-        private float? kmstand;
-        public float? KM_Stand
+        private double? kilometerstand;
+        public double? Kilometerstand
         {
-            get { return kmstand; }
+            get { return kilometerstand; }
             set
             {
-                kmstand = value;
-                NotifyPropertyChanged("KM_Stand");
+                kilometerstand = value;
+                NotifyPropertyChanged("Kilometerstand");
             }
         }
 
+        private int tankvorgaenge;
+        public int Tankvorgaenge
+        {
+            get { return tankvorgaenge; }
+            set
+            {
+                tankvorgaenge = value;
+                NotifyPropertyChanged("Tankvorgaenge");
+            }
+        }
 
         private int batterieladung = 0;
         public int Batterieladung
@@ -72,6 +82,7 @@ namespace e_Cars.UI.Cars
                 NotifyPropertyChanged("Batterieladung");
             }
         }
+
 
         private MainWindow mw { get; set; }
 
@@ -122,17 +133,9 @@ namespace e_Cars.UI.Cars
                     return;
                 }
 
-                Status status = new Status();
+               
 
-                status.Wartungstermin = WartungsTermin;
-                status.Baterieladung = Batterieladung;
-                status.StatusZeit = DateTime.Now;
-                status.KM_Stand = KM_Stand;
-
-                con.Status.Add(status);
-                con.SaveChanges();
-                c.Status_ID = status.Status_ID;
-
+               
                 con.Car.Add(c);
                 con.SaveChanges();
                 MessageBox.Show("Das Fehrzeug wurde angelegt!");
@@ -160,7 +163,12 @@ namespace e_Cars.UI.Cars
                 bData = true;
             }
 
-            if (KM_Stand == null)
+            if (Kilometerstand == null)
+            {
+                bData = true;
+            }
+
+            if (Tankvorgaenge == null)
             {
                 bData = true;
             }
@@ -173,7 +181,7 @@ namespace e_Cars.UI.Cars
             Seriennummer = null;
             WartungsTermin = null;
             Batterieladung = 0;
-            KM_Stand = null;
+            Tankvorgaenge = 0;
 
         }
 
@@ -210,7 +218,7 @@ namespace e_Cars.UI.Cars
             }
         }
 
-        private void TextBoxKMStand_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        private void Event_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !IsTextAllowed(e.Text);
         }

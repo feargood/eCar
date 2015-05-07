@@ -91,17 +91,27 @@ namespace e_Cars.UI.Cars
             }
         }
 
-        private double? kmstand;
-        public double? KM_Stand
+        private double? kilometerstand;
+        public double? Kilometerstand
         {
-            get { return kmstand; }
+            get { return kilometerstand; }
             set
             {
-                kmstand = value;
-                NotifyPropertyChanged("KM_Stand");
+                kilometerstand = value;
+                NotifyPropertyChanged("Kilometerstand");
             }
         }
 
+        private int tankvorgaenge;
+        public int Tankvorgaenge
+        {
+            get { return tankvorgaenge; }
+            set
+            {
+                tankvorgaenge = value;
+                NotifyPropertyChanged("Tankvorgaenge");
+            }
+        }
 
         private int batterieladung = 0;
         public int Batterieladung
@@ -129,12 +139,11 @@ namespace e_Cars.UI.Cars
                 ReservierungGesperrt = ci.c.ReservierungGesperrt.GetValueOrDefault(false);
                 SpontaneNutzungGesperrt = ci.c.SpontaneNutzungGesperrt.GetValueOrDefault(false);
 
-                if (ci.s != null)
-                {
-                    WartungsTermin = ci.s.Wartungstermin;
-                    Batterieladung = ci.s.Baterieladung.GetValueOrDefault();
-                    KM_Stand = ci.s.KM_Stand;
-                }
+                WartungsTermin = ci.c.Wartungstermin;
+                Batterieladung = ci.c.Batterieladung.GetValueOrDefault(0);
+                Kilometerstand = ci.c.Kilometerstand;
+
+                Tankvorgaenge = ci.c.Tankvorgaenge;
             }
         }
 
@@ -177,7 +186,7 @@ namespace e_Cars.UI.Cars
             }
         }
 
-        private void TextBoxKMStand_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        private void Event_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !IsTextAllowed(e.Text);
         }
@@ -192,79 +201,41 @@ namespace e_Cars.UI.Cars
 
                 Car c = con.Car.Single(s => s.Car_ID == ci.c.Car_ID);
 
-                Status status;
-                if (ci.s != null)
-                {
-                    status = con.Status.Single(s => s.Status_ID == ci.c.Status_ID);
-                }
-                else
-                {
-                    status = new Status();
-                }
-
-                // Prüfen ob Status änderungen...
-                if (ci.s == null
-                    || !Equals(ci.s.KM_Stand, KM_Stand)
-                    || !Equals(ci.s.Baterieladung, Batterieladung)
-                    || !Equals(ci.s.Wartungstermin, WartungsTermin))
-                {
-                    // Wenn ja die Änderungen speichern...    
-                    status.KM_Stand = KM_Stand;
-                    status.Baterieladung = Batterieladung;
-                    status.Wartungstermin = WartungsTermin;
-
-                    if (status.Status_ID == 0)
-                    {
-                        con.Status.Add(status);
-                        con.SaveChanges();
-                    }
-                    else
-                    {
-                        con.Entry(status).State = System.Data.Entity.EntityState.Modified;
-                        con.SaveChanges();
-                    }
-
-                    ci.s = status;
-
-                    bChanged = true;
-                }
-
                 // Prüfe ob Seriennummer geändert
                 if (bChanged == true
-                    || !Equals(ci.c.Seriennummer, Seriennummer))
-                {
-                    // Wenn ja die Änderungen speichern...
-                    c.Seriennummer = Seriennummer;
-                    c.Status_ID = status.Status_ID;
+                    || !Equals(ci.c.Seriennummer, Seriennummer)
+                    || !Equals(ci.c.Kilometerstand, Kilometerstand)
+                    || !Equals(ci.c.Batterieladung, Batterieladung)
+                    || !Equals(ci.c.Wartungstermin, WartungsTermin)
 
-                    con.Entry(c).State = System.Data.Entity.EntityState.Modified;
-                    con.SaveChanges();
-
-                    c.Status_ID = status.Status_ID;
-
-                    ci.c = c;
-
-                    bChanged = true;
-                }
-
-                 // Prüfe ob Sperrkennzeichen geändert
-                if (bChanged == true
                     || !Equals(ci.c.Gesperrt, Gesperrt)
                     || !Equals(ci.c.SpontaneNutzungGesperrt, SpontaneNutzungGesperrt)
                     || !Equals(ci.c.ReservierungGesperrt, ReservierungGesperrt)
+
+                    || !Equals(ci.c.Tankvorgaenge, Tankvorgaenge)
                     )
                 {
+                    // Wenn ja die Änderungen speichern...
+                    c.Seriennummer = Seriennummer;
+                    c.Kilometerstand = Kilometerstand;
+                    c.Batterieladung = Batterieladung;
+                    c.Wartungstermin = WartungsTermin;
+                    
                     c.Gesperrt = Gesperrt;
                     c.ReservierungGesperrt = ReservierungGesperrt;
                     c.SpontaneNutzungGesperrt = SpontaneNutzungGesperrt;
 
+                    c.Tankvorgaenge = Tankvorgaenge;
+
                     con.Entry(c).State = System.Data.Entity.EntityState.Modified;
                     con.SaveChanges();
+
+                    //c.Status_ID = status.Status_ID;
 
                     ci.c = c;
 
                     bChanged = true;
-                } 
+                }
 
             }
 

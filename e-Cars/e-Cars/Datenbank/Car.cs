@@ -18,7 +18,7 @@ namespace e_Cars.Datenbank
         {
             this.Fahrt = new HashSet<Fahrt>();
             this.Reservierung = new HashSet<Reservierung>();
-            this.Status1 = new HashSet<Status>();
+            this.Tanksaeule = new HashSet<Tanksaeule>();
         }
     
         public int Car_ID { get; set; }
@@ -27,10 +27,14 @@ namespace e_Cars.Datenbank
         public Nullable<bool> Gesperrt { get; set; }
         public Nullable<bool> SpontaneNutzungGesperrt { get; set; }
         public Nullable<bool> ReservierungGesperrt { get; set; }
+        public int Tankvorgaenge { get; set; }
+        public Nullable<double> Kilometerstand { get; set; }
+        public Nullable<int> Batterieladung { get; set; }
+        public Nullable<System.DateTime> Wartungstermin { get; set; }
     
         public virtual Status Status { get; set; }
         public virtual ICollection<Fahrt> Fahrt { get; set; }
         public virtual ICollection<Reservierung> Reservierung { get; set; }
-        public virtual ICollection<Status> Status1 { get; set; }
+        public virtual ICollection<Tanksaeule> Tanksaeule { get; set; }
     }
 }

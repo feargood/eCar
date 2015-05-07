@@ -25,9 +25,8 @@
 
         <Grid Grid.Row="1">
 
-            <GroupBox Header="Stammdaten" Height="155" VerticalAlignment="Top">
-                <Grid Height="136" VerticalAlignment="Top">
-
+            <GroupBox Header="Stammdaten" Margin="5" VerticalAlignment="Top" Grid.ColumnSpan="2">
+                <Grid>
                     <Label x:Name="LabelSeriennummer" Margin="10,10,0,0" Content="Seriennummer: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
                     <TextBox x:Name="TextBoxSeriennummer" Text="{Binding Path=Seriennummer, UpdateSourceTrigger=PropertyChanged}" Margin="120,10,10,0"  VerticalAlignment="Top"/>
                     <Label Margin="10,41,0,0" Content="Wartungstermin: "  VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
@@ -36,9 +35,11 @@
                     <Label Margin="120,72,0,0" Content="{Binding Path=Batterieladung, Converter={StaticResource ResourceKey=converter} }"  VerticalAlignment="Top" HorizontalAlignment="Left" Width="55" Height="26"/>
                     <Slider Value="{Binding Path=Batterieladung, UpdateSourceTrigger=PropertyChanged}" Minimum="0" Maximum="100" VerticalAlignment="Top" Margin="180,72,10,0" Height="26"/>
 
-                    <Label x:Name="LabelKMStand" Margin="10,103,0,0" Content="Kilometerstand: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
-                    <TextBox x:Name="TextBoxKMStand" MaxLength="7" DataObject.Pasting="TextBoxPasting" PreviewTextInput="TextBoxKMStand_PreviewTextInput" Text="{Binding Path=KM_Stand, UpdateSourceTrigger=PropertyChanged}" Margin="120,107,10,0" VerticalAlignment="Top"/>
+                    <Label x:Name="LabelKilometerstand" Margin="10,103,0,0" Content="Kilometerstand: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+                    <TextBox x:Name="TextBoxKilometerstand" MaxLength="7" DataObject.Pasting="TextBoxPasting" PreviewTextInput="Event_PreviewTextInput" Text="{Binding Path=Kilometerstand, UpdateSourceTrigger=PropertyChanged}" Margin="120,107,10,0" VerticalAlignment="Top"/>
 
+                    <Label x:Name="LabelTankvorgaenge" Margin="10,134,0,0" Content="Tankvorgänge: " VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+                    <TextBox x:Name="TextBoxTankvorgaenge" MaxLength="7" DataObject.Pasting="TextBoxPasting" PreviewTextInput="Event_PreviewTextInput" Text="{Binding Path=Tankvorgaenge, UpdateSourceTrigger=PropertyChanged}" Margin="120,138,10,0" VerticalAlignment="Top"/>
                 </Grid>
             </GroupBox>
 

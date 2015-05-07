@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="cd15c1e8-55cf-4692-9ed9-494f251c0542" name="UMLClassDiagram1" linkedPackageId="c1974be8-2f46-415f-8155-5109f2bfd10e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="66b39648-54ef-4080-abc6-e68bcaaeb15b">
-      <profileInstance Id="2c6d950b-5922-4e3d-8d25-9e466d99865e" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="32806a10-c6c0-46e6-b790-b12c688b170c">
-      <profileInstance Id="af898a87-7da0-4696-a90b-594b6e80ab66" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="123ff199-24e8-4217-a735-8a1540eef37f">
-      <profileInstance Id="b7ea821d-9f47-4c54-8ec7-765b060acf8c" name="CSharpProfile">
-        <elementDefinition Id="71f134f5-60fa-4d81-b03e-2c48edcab066" />
-      </profileInstance>
-      <elementDefinition Id="6215cae7-9e63-4f6f-8bd5-a257aea9f8ac" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="429c3c32-5dc0-4afc-9565-8f6749e86497" name="App" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -281,7 +261,7 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="dbb7b37d-eb91-411c-aea3-33a58afdcf9e" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
         <referencesInternal>
-          <reference Id="cedcf8f7-ab21-41d9-b098-c4f4b68fa43c" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow" tag="ViewCode">
+          <reference Id="cedcf8f7-ab21-41d9-b098-c4f4b68fa43c" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars Type%3DMainWindow" tag="ViewCode">
             <elementDefinition Id="5c6ca6c4-4dc5-4bef-857f-58d87197af8f" />
           </reference>
         </referencesInternal>
@@ -3233,5 +3213,25 @@
   </packagedElements>
   <package Id="c1974be8-2f46-415f-8155-5109f2bfd10e" name="ModelingProject2">
     <elementDefinition Id="72dcf686-81b5-4288-b6d4-0bfbea394c06" />
+    <profileInstances>
+      <packageHasProfileInstances Id="66b39648-54ef-4080-abc6-e68bcaaeb15b">
+        <profileInstance Id="2c6d950b-5922-4e3d-8d25-9e466d99865e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="32806a10-c6c0-46e6-b790-b12c688b170c">
+        <profileInstance Id="af898a87-7da0-4696-a90b-594b6e80ab66" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="123ff199-24e8-4217-a735-8a1540eef37f">
+        <profileInstance Id="b7ea821d-9f47-4c54-8ec7-765b060acf8c" name="CSharpProfile">
+          <elementDefinition Id="71f134f5-60fa-4d81-b03e-2c48edcab066" />
+        </profileInstance>
+        <elementDefinition Id="6215cae7-9e63-4f6f-8bd5-a257aea9f8ac" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

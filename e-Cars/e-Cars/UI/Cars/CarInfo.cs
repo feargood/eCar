@@ -30,32 +30,44 @@ namespace e_Cars.UI.Cars
         {
             get
             {
-                if (s.Wartungstermin.HasValue)
+                if (c.Wartungstermin.HasValue)
                 {
-                    return s.Wartungstermin.GetValueOrDefault().ToLongDateString();
+                    return c.Wartungstermin.GetValueOrDefault().ToLongDateString();
                 }
                 return null;
             }
         }
-        public string Kilometer { get {
 
-            if (s.KM_Stand.HasValue)
+        public string Kilometer
+        {
+            get
             {
-                return s.KM_Stand.GetValueOrDefault().ToString();
+                if (c.Kilometerstand.HasValue)
+                {
+                    return c.Kilometerstand.GetValueOrDefault().ToString();
+                }
+                return null;
             }
-            return null;
-        
-        } }
-        public string Batterieladung { get {
-
-            if (s.Baterieladung.HasValue)
+        }
+        public string Batterieladung
+        {
+            get
             {
-                return s.Baterieladung.GetValueOrDefault().ToString() + "%";
+                if (c.Batterieladung.HasValue)
+                {
+                    return c.Batterieladung.GetValueOrDefault().ToString() + "%";
+                }
+                return null;
             }
+        }
 
-            return null;
-
-        } }
+        public string Tankvorgaenge
+        {
+            get
+            {
+                return c.Tankvorgaenge + "";
+            }
+        }
 
     }
 }

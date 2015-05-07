@@ -811,5 +811,161 @@
         </ownedRedefinableTemplateSignatureInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="71d17468-437c-49c5-85e7-9f4f5a6521a1"
+        name="List&lt;UserInfo‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2cc162ce-95ad-4ee3-a414-bac1c26cc6e5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9c34f49-f13f-4b29-a146-ac98676c8fa3">
+                <propertyInstance
+                  Id="d72defdd-c75d-4a27-afb2-e603f13728db"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4958c4aa-35bb-4cc0-ac80-0e457809990b">
+                <propertyInstance
+                  Id="ecf87796-12c5-4529-8b02-d085793893bc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1bcb53e3-c4ec-4109-8166-f81787dd58a0">
+                <propertyInstance
+                  Id="b2d68a0a-1e78-4e11-8e58-d604680ce559"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a923763-ce4b-46a6-9e18-aeef541acb1a">
+                <propertyInstance
+                  Id="88017afc-478d-4b26-8229-06b1fdd3f006"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eac56193-c542-4811-9bd8-a0e0cf021b9a">
+                <propertyInstance
+                  Id="49baa330-1815-41b1-a7ce-7adc6c72e984"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="004d0cdb-d254-4ca7-8eae-bc3fc806222e">
+            <redefinableTemplateSignatureMoniker
+              Id="73db2c89-3b49-4f23-9ce3-e75bbd4a6727"
+              LastKnownLocation="Package1_1518.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="57cb9d01-fc9e-4cef-abf9-5c361773524c">
+                  <actuals>
+                    <classMoniker
+                      Id="f69e10f2-eb4d-48e0-84df-ddf672280f40"
+                      LastKnownName="UserInfo"
+                      LastKnownLocation="Package2_1517.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="cfa46602-5931-4c48-8cfb-080371144584"
+                      LastKnownLocation="Package1_1518.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b5365a7d-969a-4aba-9060-2668509215dd"
+        name="List&lt;TankstelleInfo‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8b88652a-4721-4ad7-a5bd-bee3f5cbd896"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="225f6c2c-b655-41f6-8298-3f88dde7e004">
+                <propertyInstance
+                  Id="c6231c81-0c7d-487a-900e-295f9e45623e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3b32aac-db5b-445f-8d80-ec1ce286768a">
+                <propertyInstance
+                  Id="2403101e-bd71-4441-8ad7-931ee5c82514"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd7b00c7-e6d5-4035-81db-869af16638a1">
+                <propertyInstance
+                  Id="c920ee00-d23d-4e87-9e66-2351eec3a0de"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38359916-42ab-4016-8835-bac1c639a1f4">
+                <propertyInstance
+                  Id="211ad396-20be-4973-b9fe-abb8b0fc6b8b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7314493e-c6ab-40e6-aab0-5691b3cf96e5">
+                <propertyInstance
+                  Id="0552153b-583f-4059-9172-209935bab036"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="e1ecbe40-7c75-4221-ac71-36def1cb7cc4">
+            <redefinableTemplateSignatureMoniker
+              Id="73db2c89-3b49-4f23-9ce3-e75bbd4a6727"
+              LastKnownLocation="Package1_1518.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="7f3e7cd4-be47-4621-9a74-b4adde16df17">
+                  <actuals>
+                    <classMoniker
+                      Id="09451ca3-fa93-416c-9862-eb184aa425fe"
+                      LastKnownName="TankstelleInfo"
+                      LastKnownLocation="Package3_1517.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="cfa46602-5931-4c48-8cfb-080371144584"
+                      LastKnownLocation="Package1_1518.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>

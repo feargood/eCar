@@ -36,6 +36,8 @@
                             <GridViewColumn Header="Wartungstermin" Width="Auto" DisplayMemberBinding="{Binding Wartungstermin}"></GridViewColumn>
                             <GridViewColumn Header="Kilometer" Width="Auto" DisplayMemberBinding="{Binding Kilometer}"></GridViewColumn>
                             <GridViewColumn Header="Batterieladung" Width="Auto" DisplayMemberBinding="{Binding Batterieladung}"></GridViewColumn>
+                            <GridViewColumn Header="Tankvorgänge" Width="Auto" DisplayMemberBinding="{Binding Tankvorgaenge}"></GridViewColumn>
+
                         </GridView>
                     </ListView.View>                    
                 </ListView>

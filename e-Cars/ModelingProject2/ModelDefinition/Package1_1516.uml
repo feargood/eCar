@@ -3657,7 +3657,7 @@
         <referencesInternal>
           <reference
             Id="47c9aa27-186e-4647-b395-85f74545281a"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DKunde"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DKunde"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -10002,7 +10002,7 @@
         <referencesInternal>
           <reference
             Id="68191a3e-3c79-482b-a9fa-2875920f3810"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DTankstelle"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DTankstelle"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -11696,7 +11696,7 @@
         <referencesInternal>
           <reference
             Id="2f94b484-deb5-4919-ac3d-8fdbd0d821e8"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DAdresse"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DAdresse"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -12371,7 +12371,7 @@
         <referencesInternal>
           <reference
             Id="898f1df9-3278-4765-9967-25802bba62c4"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars.Datenbank Type%3DBank"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars.Datenbank Type%3DBank"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>

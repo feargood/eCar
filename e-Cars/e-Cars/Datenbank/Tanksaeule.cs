@@ -23,8 +23,9 @@ namespace e_Cars.Datenbank
         public int Tanksaeule_ID { get; set; }
         public int Tankstelle_ID { get; set; }
         public int Tanksaeule_Nr { get; set; }
-        public bool Belegt { get; set; }
+        public Nullable<int> Car_ID { get; set; }
     
+        public virtual Car Car { get; set; }
         public virtual ICollection<Fahrt> Fahrt { get; set; }
         public virtual ICollection<Fahrt> Fahrt1 { get; set; }
         public virtual Tankstelle Tankstelle { get; set; }

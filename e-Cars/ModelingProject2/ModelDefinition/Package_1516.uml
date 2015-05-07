@@ -27,7 +27,7 @@
         <referencesInternal>
           <reference
             Id="5c6ca6c4-4dc5-4bef-857f-58d87197af8f"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FStudium%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe Namespace%3De_Cars Type%3DMainWindow"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FTorsten%2FDropbox%2FP2-e-car%2FDesktop Anwendung%2Fe-Cars%2Fe-Cars%2Fbin%2FDebug%2Fe-Cars.exe&quot; Namespace%3De_Cars Type%3DMainWindow"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
