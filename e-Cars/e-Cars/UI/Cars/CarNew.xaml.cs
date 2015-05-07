@@ -132,10 +132,6 @@ namespace e_Cars.UI.Cars
                     TextBoxSeriennummer.Focus();
                     return;
                 }
-
-               
-
-               
                 con.Car.Add(c);
                 con.SaveChanges();
                 MessageBox.Show("Das Fehrzeug wurde angelegt!");

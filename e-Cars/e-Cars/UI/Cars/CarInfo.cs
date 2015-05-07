@@ -65,8 +65,38 @@ namespace e_Cars.UI.Cars
         {
             get
             {
-                return c.Tankvorgaenge + "";
+                return c.Tankvorgaenge.ToString();
             }
+        }
+
+        public bool Gesperrt
+        {
+            get
+            {
+                return c.Gesperrt.GetValueOrDefault(false);
+            }
+            // Wegen Binding mit der Oberfläche
+            set { }
+        }
+
+        public bool ReservierungGesperrt
+        {
+            get
+            {
+                return c.ReservierungGesperrt.GetValueOrDefault(false);
+            }
+            // Wegen Binding mit der Oberfläche
+            set { }
+        }
+
+        public bool SpontaneNutzungGesperrt
+        {
+            get
+            {
+                return c.SpontaneNutzungGesperrt.GetValueOrDefault(false);
+            }
+            // Wegen Binding mit der Oberfläche
+            set { }
         }
 
     }

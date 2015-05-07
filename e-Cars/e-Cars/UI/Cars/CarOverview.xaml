@@ -37,6 +37,36 @@
                             <GridViewColumn Header="Kilometer" Width="Auto" DisplayMemberBinding="{Binding Kilometer}"></GridViewColumn>
                             <GridViewColumn Header="Batterieladung" Width="Auto" DisplayMemberBinding="{Binding Batterieladung}"></GridViewColumn>
                             <GridViewColumn Header="Tankvorgänge" Width="Auto" DisplayMemberBinding="{Binding Tankvorgaenge}"></GridViewColumn>
+                            <!--<GridViewColumn Header="Gesperrt" Width="Auto" DisplayMemberBinding="{Binding Gesperrt}"></GridViewColumn>-->
+                            <!--<GridViewColumn Header="Spontanenutzung gesperrt" Width="Auto" DisplayMemberBinding="{Binding SpontaneNutzungGesperrt}"></GridViewColumn>-->
+                            <!--<GridViewColumn Header="Reservierung gesperrt" Width="Auto" DisplayMemberBinding="{Binding ReservierungGesperrt}"></GridViewColumn>-->
+
+                            <GridViewColumn Header="Gesperrt" Width="Auto">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding Path=Gesperrt}" IsHitTestVisible="False" Focusable="False"></CheckBox>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+
+                            <GridViewColumn Header="Spontanenutzung gesperrt" Width="Auto">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding Path=SpontaneNutzungGesperrt}" IsHitTestVisible="False" Focusable="False"></CheckBox>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+
+                            <GridViewColumn Header="Reservierung gesperrt" Width="Auto">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding Path=ReservierungGesperrt}" IsHitTestVisible="False" Focusable="False"></CheckBox>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
 
                         </GridView>
                     </ListView.View>                    

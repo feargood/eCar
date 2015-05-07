@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              xmlns:loc="clr-namespace:e_Cars.UI.Cars"
              Style="{StaticResource UserControlStyle}"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="400" d:DesignWidth="600">
 
     <UserControl.Resources>
         <loc:IntToProzentConverter x:Key="converter" />
