@@ -51,7 +51,7 @@ namespace e_Cars.UI.Cars
                     return "Kein Status vorhanden!";
                 }
                 
-                return "Batterie " + s.Baterieladung + "%";
+                return "Batterie " + s.Batterieladung + "%";
             }
         }
 
