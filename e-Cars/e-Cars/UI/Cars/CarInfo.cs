@@ -39,18 +39,18 @@ namespace e_Cars.UI.Cars
         }
         public string Kilometer { get {
 
-            if (s.KM_Stand.HasValue)
+            if (s.Kilometerstand.HasValue)
             {
-                return s.KM_Stand.GetValueOrDefault().ToString();
+                return s.Kilometerstand.GetValueOrDefault().ToString();
             }
             return null;
         
         } }
         public string Batterieladung { get {
 
-            if (s.Baterieladung.HasValue)
+            if (s.Batterieladung.HasValue)
             {
-                return s.Baterieladung.GetValueOrDefault().ToString() + "%";
+                return s.Batterieladung.GetValueOrDefault().ToString() + "%";
             }
 
             return null;
