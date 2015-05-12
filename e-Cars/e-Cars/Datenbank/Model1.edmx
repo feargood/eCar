@@ -37,6 +37,7 @@
           <Property Name="Kilometerstand" Type="float" />
           <Property Name="Batterieladung" Type="int" />
           <Property Name="Wartungstermin" Type="datetime" />
+          <Property Name="Reservierungsstatus_ID" Type="int" />
         </EntityType>
         <EntityType Name="Fahrt">
           <Key>
@@ -522,6 +523,7 @@
           <Property Name="Kilometerstand" Type="Double" />
           <Property Name="Batterieladung" Type="Int32" />
           <Property Name="Wartungstermin" Type="DateTime" Precision="3" />
+          <Property Name="Reservierungsstatus_ID" Type="Int32" />
           <NavigationProperty Name="Status" Relationship="Projekt2Model.FK_Car_Status" FromRole="Car" ToRole="Status" />
           <NavigationProperty Name="Fahrt" Relationship="Projekt2Model.FK_Fahrt_Car" FromRole="Car" ToRole="Fahrt" />
           <NavigationProperty Name="Reservierung" Relationship="Projekt2Model.FK_Reservierung_Car" FromRole="Car" ToRole="Reservierung" />
@@ -872,6 +874,7 @@
           <EntitySetMapping Name="Car">
             <EntityTypeMapping TypeName="Projekt2Model.Car">
               <MappingFragment StoreEntitySet="Car">
+                <ScalarProperty Name="Reservierungsstatus_ID" ColumnName="Reservierungsstatus_ID" />
                 <ScalarProperty Name="Wartungstermin" ColumnName="Wartungstermin" />
                 <ScalarProperty Name="Batterieladung" ColumnName="Batterieladung" />
                 <ScalarProperty Name="Kilometerstand" ColumnName="Kilometerstand" />

@@ -107,4 +107,6 @@ C:\Users\Torsten\Dropbox\P2-e-car\Desktop Anwendung\e-Cars\e-Cars\obj\Debug\e-Ca
 C:\Users\Torsten\Dropbox\P2-e-car\Desktop Anwendung\e-Cars\e-Cars\obj\Debug\e_Cars.Properties.Resources.resources
 C:\Users\Torsten\Dropbox\P2-e-car\Desktop Anwendung\e-Cars\e-Cars\obj\Debug\e_Cars.Resources.ResourceECars.resources
 C:\Users\Torsten\Dropbox\P2-e-car\Desktop Anwendung\e-Cars\e-Cars\obj\Debug\e-Cars.csproj.GenerateResource.Cache
-C:\Users\Torsten\Dropbox\P2-e-car\Desktop Anwendung\e-Cars\e-Cars\obj\Debug\e-Cars.csprojResolveAssemblyReference.cache
+C:\Users\Torsten\Dropbox\Github\eCar\e-Cars\e-Cars\bin\Debug\e-Cars.exe.config
+C:\Users\Torsten\Dropbox\Github\eCar\e-Cars\e-Cars\obj\Debug\e-Cars.exe
+C:\Users\Torsten\Dropbox\Github\eCar\e-Cars\e-Cars\obj\Debug\e-Cars.pdb

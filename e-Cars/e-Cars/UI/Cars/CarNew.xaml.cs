@@ -164,11 +164,7 @@ namespace e_Cars.UI.Cars
                 bData = true;
             }
 
-            if (Tankvorgaenge == null)
-            {
-                bData = true;
-            }
-
+            
             return bData;
         }
 

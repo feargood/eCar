@@ -5,18 +5,18 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="951f36cf8e1a4d3db5c4ce0b1f3e907d" Name="Diagram1" ZoomLevel="106">
-        <EntityTypeShape EntityType="Projekt2Model.Adresse" Width="1.5" PointX="0.75" PointY="4.25" />
-        <EntityTypeShape EntityType="Projekt2Model.Bank" Width="1.5" PointX="0.75" PointY="7.375" />
-        <EntityTypeShape EntityType="Projekt2Model.Car" Width="1.5" PointX="5.25" PointY="20.875" />
-        <EntityTypeShape EntityType="Projekt2Model.Fahrt" Width="1.5" PointX="7.5" PointY="7.125" />
-        <EntityTypeShape EntityType="Projekt2Model.GlobaleEinstellungen" Width="1.5" PointX="7.75" PointY="0.75" />
-        <EntityTypeShape EntityType="Projekt2Model.Karte" Width="1.5" PointX="5.25" PointY="17.375" />
-        <EntityTypeShape EntityType="Projekt2Model.Kunde" Width="1.5" PointX="3" PointY="6.125" />
-        <EntityTypeShape EntityType="Projekt2Model.Rechnung" Width="1.5" PointX="5.25" PointY="5.875" />
-        <EntityTypeShape EntityType="Projekt2Model.Reservierung" Width="1.5" PointX="5.25" PointY="8.625" />
-        <EntityTypeShape EntityType="Projekt2Model.Status" Width="1.5" PointX="3" PointY="22" />
-        <EntityTypeShape EntityType="Projekt2Model.Tanksaeule" Width="1.5" PointX="5.25" PointY="1.5" />
-        <EntityTypeShape EntityType="Projekt2Model.Tankstelle" Width="1.5" PointX="3" PointY="1.375" />
+        <EntityTypeShape EntityType="Projekt2Model.Adresse" Width="1.5" PointX="0.75" PointY="6.375" />
+        <EntityTypeShape EntityType="Projekt2Model.Bank" Width="1.5" PointX="0.75" PointY="9.5" />
+        <EntityTypeShape EntityType="Projekt2Model.Car" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="Projekt2Model.Fahrt" Width="1.5" PointX="5.25" PointY="8.5" />
+        <EntityTypeShape EntityType="Projekt2Model.GlobaleEinstellungen" Width="1.5" PointX="5.75" PointY="2.875" />
+        <EntityTypeShape EntityType="Projekt2Model.Karte" Width="1.5" PointX="5.25" PointY="16.75" />
+        <EntityTypeShape EntityType="Projekt2Model.Kunde" Width="1.5" PointX="3" PointY="8.25" />
+        <EntityTypeShape EntityType="Projekt2Model.Rechnung" Width="1.5" PointX="5.25" PointY="19.625" />
+        <EntityTypeShape EntityType="Projekt2Model.Reservierung" Width="1.5" PointX="8.25" PointY="8.75" />
+        <EntityTypeShape EntityType="Projekt2Model.Status" Width="1.5" PointX="0.75" PointY="3" />
+        <EntityTypeShape EntityType="Projekt2Model.Tanksaeule" Width="1.5" PointX="3" PointY="14.5" />
+        <EntityTypeShape EntityType="Projekt2Model.Tankstelle" Width="1.5" PointX="0.75" PointY="14.375" />
         <AssociationConnector Association="Projekt2Model.FK_Kunde_Adresse" />
         <AssociationConnector Association="Projekt2Model.FK_Kunde_Bank" />
         <AssociationConnector Association="Projekt2Model.FK_Car_Status" />
