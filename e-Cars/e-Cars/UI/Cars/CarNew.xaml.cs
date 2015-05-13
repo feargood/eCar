@@ -83,16 +83,42 @@ namespace e_Cars.UI.Cars
             }
         }
 
+        private List<Status> liststatus = new List<Status>();
+        public List<Status> listStatus
+        {
+            get { return liststatus; }
+            set
+            {
+                liststatus = value;
+                NotifyPropertyChanged("listStatus");
+            }
+        }
+
+        private Status selectedstatus;
+        public Status selectedStatus
+        {
+            get { return selectedstatus; }
+
+            set
+            {
+                if (selectedstatus != value)
+                {
+                    selectedstatus = value;
+                    NotifyPropertyChanged("selectedStatus");
+                }
+            }
+        }
 
         private MainWindow mw { get; set; }
-
-
 
         public CarNew(MainWindow mw)
         {
             this.mw = mw;
             InitializeComponent();
             this.DataContext = this;
+
+            Projekt2Entities con = new Projekt2Entities();
+            listStatus = con.Status.ToList();
 
             clearFields();
 
@@ -120,7 +146,6 @@ namespace e_Cars.UI.Cars
                 return;
             }
 
-
             Car c = new Car();
             c.Seriennummer = TextBoxSeriennummer.Text.Trim();
 
@@ -132,6 +157,13 @@ namespace e_Cars.UI.Cars
                     TextBoxSeriennummer.Focus();
                     return;
                 }
+
+                c.Batterieladung = Batterieladung;
+                c.Kilometerstand = Kilometerstand;
+                c.Status_ID = selectedStatus.Status_ID;
+                c.Tankvorgaenge = Tankvorgaenge;
+                c.Wartungstermin = WartungsTermin;
+
                 con.Car.Add(c);
                 con.SaveChanges();
                 MessageBox.Show("Das Fehrzeug wurde angelegt!");
@@ -164,6 +196,10 @@ namespace e_Cars.UI.Cars
                 bData = true;
             }
 
+            if (selectedStatus == null)
+            {
+                bData = true;
+            }
             
             return bData;
         }
@@ -174,6 +210,8 @@ namespace e_Cars.UI.Cars
             WartungsTermin = null;
             Batterieladung = 0;
             Tankvorgaenge = 0;
+            selectedStatus = null;
+            Kilometerstand = null;
 
         }
 

@@ -124,11 +124,43 @@ namespace e_Cars.UI.Cars
             }
         }
 
+        private List<Status> liststatus = new List<Status>();
+
+        public List<Status> listStatus
+        {
+            get { return liststatus; }
+            set
+            {
+                liststatus = value;
+                NotifyPropertyChanged("listStatus");
+            }
+        }
+
+        private Status selectedstatus;
+        public Status selectedStatus
+        {
+            get { return selectedstatus; }
+
+            set
+            {
+                if (selectedstatus != value)
+                {
+                    selectedstatus = value;
+                    NotifyPropertyChanged("selectedStatus");
+                }
+            }
+        }
+
         public CarDetail(MainWindow mw, CarInfo ci)
         {
             this.mw = mw;
             this.ci = ci;
             InitializeComponent();
+
+
+            Projekt2Entities con = new Projekt2Entities();
+            listStatus = con.Status.ToList();
+            
 
             this.DataContext = this;
 
@@ -144,6 +176,9 @@ namespace e_Cars.UI.Cars
                 Kilometerstand = ci.c.Kilometerstand;
 
                 Tankvorgaenge = ci.c.Tankvorgaenge;
+
+                selectedStatus = listStatus.SingleOrDefault(s => s.Status_ID == ci.c.Status_ID);
+
             }
         }
 
@@ -162,7 +197,6 @@ namespace e_Cars.UI.Cars
                 PropertyChanged(this, new PropertyChangedEventArgs(info));
             }
         }
-
 
         private static bool IsTextAllowed(string text)
         {
@@ -213,6 +247,10 @@ namespace e_Cars.UI.Cars
                     || !Equals(ci.c.ReservierungGesperrt, ReservierungGesperrt)
 
                     || !Equals(ci.c.Tankvorgaenge, Tankvorgaenge)
+
+                    || !Equals(ci.c.Status_ID, selectedStatus.Status_ID)
+
+
                     )
                 {
                     // Wenn ja die Änderungen speichern...
@@ -226,6 +264,8 @@ namespace e_Cars.UI.Cars
                     c.SpontaneNutzungGesperrt = SpontaneNutzungGesperrt;
 
                     c.Tankvorgaenge = Tankvorgaenge;
+
+                    c.Status_ID = selectedStatus.Status_ID;
 
                     con.Entry(c).State = System.Data.Entity.EntityState.Modified;
                     con.SaveChanges();

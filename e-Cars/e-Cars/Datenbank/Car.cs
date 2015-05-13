@@ -31,7 +31,6 @@ namespace e_Cars.Datenbank
         public Nullable<double> Kilometerstand { get; set; }
         public Nullable<int> Batterieladung { get; set; }
         public Nullable<System.DateTime> Wartungstermin { get; set; }
-        public Nullable<int> Reservierungsstatus_ID { get; set; }
     
         public virtual Status Status { get; set; }
         public virtual ICollection<Fahrt> Fahrt { get; set; }
