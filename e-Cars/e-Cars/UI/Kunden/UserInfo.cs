@@ -17,12 +17,13 @@ namespace e_Cars.UI.Kunden
         public UserInfo(Kunde k){
             if (k != null)
             {
-                using (Projekt2Entities con = new Projekt2Entities()){
+                //using (Projekt2Entities con = new Projekt2Entities())
+                //{
 
-                    kunde = con.Kunde.SingleOrDefault(s => s.Kunde_ID == k.Kunde_ID);
-                    adress = kunde.Adresse;
-                    bank = kunde.Bank;
-                }
+                //    kunde = con.Kunde.SingleOrDefault(s => s.Kunde_ID == k.Kunde_ID);
+                //    adress = kunde.Adresse;
+                //    bank = kunde.Bank;
+                //}
             }
         }
 

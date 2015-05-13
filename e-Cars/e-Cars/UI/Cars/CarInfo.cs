@@ -14,11 +14,9 @@ namespace e_Cars.UI.Cars
         {
             // Todo hier noch die daten prüfen
             this.c = c;
-            this.s = c.Status;
         }
 
-        public Datenbank.Car c { get; set; }
-        public Datenbank.Status s { get; set; }
+        public Car c { get; set; } 
 
         public string Seriennummer
         {

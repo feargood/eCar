@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,6 +60,7 @@ namespace e_Cars.UI.Kunden
 
         private List<UserInfo> getListOfUserInfo(string filter)
         {
+
             List<UserInfo> listUserInfo = new List<UserInfo>();
             using (Projekt2Entities con = new Projekt2Entities())
             {
@@ -68,6 +70,7 @@ namespace e_Cars.UI.Kunden
                     listUserInfo.Add(ui);
                 }
             }
+
             return listUserInfo;
         }
 

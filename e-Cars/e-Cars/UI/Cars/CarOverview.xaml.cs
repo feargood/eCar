@@ -57,6 +57,11 @@ namespace e_Cars.UI.Cars
             {
                 foreach (Car c in con.Car)
                 {
+
+                    
+
+
+                    
                     CarInfo ci = new CarInfo(c);
                     listCarsInfo.Add(ci);
                 }
